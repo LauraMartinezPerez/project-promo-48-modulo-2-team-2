@@ -1,3 +1,8 @@
 @use 'core/reset';
+@use 'core/variables';
+@use 'layout/header';
+@use 'layout/hero';
 @use 'layout/footer';
-@use 'core/reset';
+@use 'layout/forms';
+@use 'layout/card';
+

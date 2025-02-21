@@ -1,12 +1,18 @@
 // <weight>: Use a value from 100 to 900
 // <uniquifier>: Use a unique and descriptive class name
 
-//*.inter-<uniquifier> {
-    font-family: "Inter", serif;
+/* FONTS */
+/*     font-family: "Inter", serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
-    font-style: normal;
-  }
+    font-style: normal; */
   
-  //*
+  $font-main: "Inter", serif;
+
+  /* COLORS */
+  $yellow: #E9C46A;
+  $green: #2A9D8F;
+  $blue: #264653;
+
+  
   
