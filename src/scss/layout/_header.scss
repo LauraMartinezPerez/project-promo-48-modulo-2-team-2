@@ -1,4 +1,5 @@
 @use '../core/variables' as vars;
+
 .header_container {
     display: flex;
     width: 100%;
@@ -6,6 +7,6 @@
     align-items: left;
     justify-content: space-between;
     text-align: center;
-    background: var($
+    background: vars.$green opacify($color: #2a9d909d, $amount: 0);
   }
 
