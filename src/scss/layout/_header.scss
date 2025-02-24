@@ -7,7 +7,26 @@
     align-items: left;
     justify-content: space-between;
     text-align: center;
-   /*  background-color: vars.$green opacity($color: #2a9d909d, $amount: 0); */
+    background-color: #2a9d90a9;
     color: white;
+    font-family: "Inter", serif;
+    align-items: center;
+    background-image: radial-gradient(#e9c56aa6 10%, transparent 10%); 
+    background-size: 30px 30px;
   }
+
+.header_icon {
+  width: 100px;
+  left: 0%;
+  top: 0%;
+  color: white;
+  display:flex;
+}
+
+.subtitle {
+  font-family: "Inter", serif;
+  color: white;
+  font-size: 30px; 
+  display: flex;
+}
 
