@@ -1,0 +1,12 @@
+@use "../core/variables" as vars;
+
+.footer-container {
+    background-color: vars.$blue;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: vars.$yellow;
+    
+}
