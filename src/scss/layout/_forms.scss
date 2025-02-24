@@ -107,9 +107,11 @@ form.form {
 
 
     
-    
-    
-
+.container_forms {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
     
     fieldset.share {
         background-color: lightcoral;
