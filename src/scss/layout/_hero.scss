@@ -1,0 +1,137 @@
+@use "../core/variables" as vars;
+
+.hero-container {
+   background-color: vars.$yellow;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   gap: 30px;
+}
+
+
+.hero-img-container {
+
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    margin-top: 50px;
+    width: 90%;
+}
+.hero-img-terror {
+    
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: -20px;
+    margin:0 110px;
+    z-index: 1;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+.hero-img-scifi {
+    width: 150px;
+    height: auto;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-img-romance {
+    width: 150px;
+    height: auto;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text-container {
+
+    font-family: vars.$font-main;
+    color: vars.$blue;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.hero-logo {
+    width: 120px;
+    transform: rotate(-20deg);
+
+}
+
+
+.hero-step-container {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: vars.$font-main;
+    color: vars.$blue;
+
+
+}
+.hero-step-design {
+    background-color: vars.$white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.hero-icon-design {
+    width: 50px;
+    height: 50px;
+}
+.hero-step-fill {
+    background-color: vars.$white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.hero-icon-fill {
+    width: 50px;
+    height: 50px;
+}
+.hero-step-share {
+    background-color: vars.$white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.hero-icon-share {
+    width: 50px;
+    height: 50px;
+}
+
+.hero-button {
+    background-color: vars.$green;
+    color: vars.$white;
+    width: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: vars.$font-main;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
