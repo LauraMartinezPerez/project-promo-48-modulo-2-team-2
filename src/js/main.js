@@ -1,3 +1,3 @@
-'use strict';
-
-console.log('>> Ready :)');
+"use strict";
+import "./collapsables.js";
+import "./forms.js";
