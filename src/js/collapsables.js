@@ -1,8 +1,5 @@
 /* console.log("fichero colapsables");
 
-
-
-
 const userName = document.querySelector(".js-name");
 const listName = document.querySelector(".js-list-name");
 const img = document.querySelector(".js-img");
@@ -22,3 +19,13 @@ function handleClickFormDesign () {
 designTitle.addEventListener ("click", handleClickFormDesign);
 
  */
+function showAndHiddenForm() {    
+    designForm.classList.toggle("collapsed");
+}
+
+designTitle.addEventListener("click", (event) => {
+    event.preventDefault();
+    showAndHiddenForm();
+})
+
+
