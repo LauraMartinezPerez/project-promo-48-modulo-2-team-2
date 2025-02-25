@@ -2,6 +2,7 @@ form.form {
     display: flex;
     flex-direction: column;
     padding: 30px;  
+    font-family: "Inter", serif;
 
     & span.dropdown {
         color: #2a9d8f;
@@ -111,8 +112,19 @@ form.form {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
     
     fieldset.share {
         background-color: lightcoral;
-    }    
+    } 
+
+    .preview {
+        display: flex;
+    }
+
+@media (max-width: 768px) {
+.container_forms {
+flex-direction: row;
+}
+    }
