@@ -104,10 +104,10 @@ form.form {
             }
         }
     }
-}
 
-.collapsed {
-    display: none;
+    & section.design fieldset.collapsed {
+        display: none;
+    }
 }
 
 .container_forms {
