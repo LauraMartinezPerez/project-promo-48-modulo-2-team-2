@@ -1,3 +1,5 @@
+@use "../core/variables" as vars;
+
 form.form {
     display: flex;
     flex-direction: column;
@@ -5,8 +7,8 @@ form.form {
     font-family: "Inter", serif;
 
     & span.dropdown {
-        color: #2a9d8f;
-        background-color: #ffffff;
+        color: vars.$green;
+        background-color: vars.$white;
         border-radius: 50%;
         width: 25px;
         height: 25px;
@@ -20,19 +22,24 @@ form.form {
         padding: 10px;
 
         & div.design {
-            background-color: aquamarine;
+            background-color: vars.$green;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            border: 1px solid black;
-            padding: 5px;
+            color: vars.$yellow;
+            border: 2.5px solid vars.$blue;
+            border-radius: 20px;
+            padding: 10px 20px;
         }
 
         & fieldset.design {
-            background-color: rgb(220, 164, 231);
+            background-color: vars.$yellow;
             display: flex;
             flex-direction: column;
+            color: vars.$blue;
+            border: 2.5px solid vars.$blue;
+            border-radius: 20px;
             gap: 10px;
             padding: 20px;
         }
@@ -42,32 +49,39 @@ form.form {
         padding: 10px;
 
         & div.fill {
-            background-color: aquamarine;
+            background-color: vars.$green;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            border: 1px solid black;
-            padding: 5px;
+            color: vars.$yellow;
+            border: 2.5px solid vars.$blue;
+            border-radius: 20px;
+            padding: 10px 20px;
         }
 
         & fieldset.fill {
-            background-color: rgb(220, 164, 231);
+            background-color: vars.$yellow;
             display: flex;
             flex-direction: column;
+            color: vars.$blue;
+            border: 2.5px solid vars.$blue;
+            border-radius: 20px;
             gap: 10px;
             padding: 20px;
         }
 
         & fieldset.genre {
-            background-color: lightblue;
-            border: 1px solid black;
             padding: 10px;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             gap: 5px;
             padding: 20px;
+        }
+
+        & legend.bold {
+            font-size: 25px;
         }
 
         & fieldset.titles {
@@ -81,27 +95,29 @@ form.form {
         padding: 10px;
 
         & div.share {
-            background-color: aquamarine;
+            background-color: vars.$green;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            border: 1px solid black;
-            padding: 5px;
+            color: vars.$yellow;
+            border: 2.5px solid vars.$blue;
+            border-radius: 20px;
+            padding: 10px 20px;
         }
 
         & fieldset.share {
-            background-color: rgb(220, 164, 231);
+            background-color: vars.$yellow;
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 10px;
             padding: 20px;
+            color: vars.$blue;
+            border: 2.5px solid vars.$blue;
+            border-radius: 20px;
 
-            & button {
-                width: 100px;
-                height: 40px;
-            }
+
         }
     }
 
@@ -109,9 +125,7 @@ form.form {
     display: none;
 } 
 
- /*    & section.design fieldset.collapsed {
-        display: none;
-    } */
+
     
 }
 
