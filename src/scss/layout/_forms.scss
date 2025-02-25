@@ -1,5 +1,8 @@
+@use "../core/variables" as vars;
+
 form.form {
-    background-color: red;
+    background-color: vars.$yellow;
+    font-family: vars.$font-main;
     display: flex;
     flex-direction: column;
     padding: 30px;  
@@ -30,7 +33,7 @@ form.form {
         }  
         
         & fieldset.design {
-            background-color: rgb(220, 164, 231);
+            background-color: vars.$blue;
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -52,7 +55,7 @@ form.form {
         }  
         
         & fieldset.fill {
-            background-color: rgb(220, 164, 231);
+            background-color: vars.$blue;
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -91,7 +94,7 @@ form.form {
         }
 
         & fieldset.share {
-            background-color: rgb(220, 164, 231);
+            background-color: vars.$blue;
             display: flex;
             flex-direction: column;
             align-items: center;
