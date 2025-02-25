@@ -105,9 +105,14 @@ form.form {
         }
     }
 
-    & section.design fieldset.collapsed {
+.collapsed {
+    display: none;
+} 
+
+ /*    & section.design fieldset.collapsed {
         display: none;
-    }
+    } */
+    
 }
 
 .container_forms {
