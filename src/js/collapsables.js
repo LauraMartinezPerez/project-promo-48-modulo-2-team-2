@@ -21,11 +21,11 @@ designTitle.addEventListener ("click", handleClickFormDesign);
  */
 function showAndHiddenForm() {    
     designForm.classList.toggle("collapsed");
+    console.log("escuchando el click");
+    if (designTitle.classList.contains("collapsed"))
 }
 
 designTitle.addEventListener("click", (event) => {
     event.preventDefault();
     showAndHiddenForm();
 })
-
-
