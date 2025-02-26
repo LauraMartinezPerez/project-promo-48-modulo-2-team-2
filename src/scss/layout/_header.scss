@@ -3,11 +3,10 @@
 .header_container {
     display: flex;
     width: 100%;
-    position: sticky;
-    align-items: left;
+    // position: sticky;
     justify-content: space-between;
-    text-align: center;
-    background-color: #2a9d90a9;
+    // text-align: center;
+    background-color: vars.$green;
     color: white;
     font-family: "Inter", serif;
     align-items: center;
@@ -15,18 +14,20 @@
     background-size: 30px 30px;
   }
 
+.header_title {
+  padding-right: 40px;
+}
+
 .header_icon {
   width: 100px;
-  left: 0%;
-  top: 0%;
-  color: white;
+  // color: white;
   display:flex;
 }
 
-.subtitle {
-  font-family: "Inter", serif;
-  color: white;
-  font-size: 30px; 
-  display: flex;
-}
+// .subtitle {
+//   font-family: "Inter", serif;
+//   color: white;
+//   font-size: 30px; 
+//   display: flex;
+// }
 

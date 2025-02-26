@@ -5,12 +5,12 @@
 }
 
 .card-title {
-    color: white;
+    color: vars.$blue;
     text-align: center;
 }
 
 .card-previw {
-    background-color: vars.$blue;
+    background-color: vars.$green;
 }
 .img-category {
     height: 20px;   
@@ -21,11 +21,24 @@
     font-size: large;
 }
 
+div.img-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+div.img-category img {
+    width: 50px;
+}
+
 .card_list_style {
     color:white;
     font-family: "Inter", serif;
     font-size: 40px;
-    background-color: black;
+    // background-color: black;
 }
 
 div.card-foot {
