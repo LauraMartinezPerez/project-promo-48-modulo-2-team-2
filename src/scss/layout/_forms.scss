@@ -5,6 +5,7 @@ form.form {
     flex-direction: column;
     padding: 30px;
     font-family: "Inter", serif;
+    flex-wrap: wrap;
 
     & span.dropdown {
         color: vars.$green;
@@ -65,6 +66,7 @@ form.form {
             border: 2.5px solid vars.$blue;
             border-radius: 20px;
             padding: 10px 20px;
+            flex-wrap: wrap;
         }
 
         & fieldset.fill {
@@ -76,14 +78,17 @@ form.form {
             border-radius: 20px;
             gap: 10px;
             padding: 20px;
+            flex-wrap: wrap;
         }
 
         & fieldset.genre {
             display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            gap: 5px;
+            flex-direction: row;
+            gap: 10px;
             padding: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
         }
 
         & legend.bold {
@@ -157,6 +162,23 @@ form.form {
     font-weight: 300px;
 }
 
+.containter_images_forms {
+width: 100px;
+}
+
+.forms_image_selector {
+    display: flex;
+    //justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.forms_check_title {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
 
 @media (min-width: 768px) {
     .forms_container {

@@ -4,33 +4,42 @@
     <span class="dropdown"><i class="fa-solid fa-caret-down"></i></span>
   </div>
 
-  <div class="collapsed js-fill-form">
+  <div class="collapsed js-fill-form form_fill_content">
     <fieldset class="fill">
       <fieldset class="genre">
-          <legend class="bold">Género</legend>
+          <legend class="bold">Género de tu lista de pelis</legend>
 
-        <div>
+        <div class="forms_image_selector">
+          <img class= "hero-img-scifi" src="/images/terror.jpg" alt="imagen de cartel  de terror">
+          <div class="forms_check_title">
           <input id="terror" type="radio" name="genre" />
-          <label for="terror">Terror</label>
-          <img src="/images/terror.jpg" alt="imagen de cartel  de terror">
+          <label for="terror">Terror</label></div>
         </div>
 
-          <div>
+          <div class="forms_image_selector">
+          <img class="hero-img-scifi" src="/images/ciencia-ficcion.jpg" alt="imagen de cartel de ciencia ficcion">        
+          <div class="forms_check_title">
           <input id="fiction" type="radio" name="genre" />
-          <label for="fiction">Ciéncia ficción</label>
+          <label for="fiction">Ciencia ficción</label></div>
         </div>
 
-        <div>
+        <div class="forms_image_selector">
+          <img class="hero-img-romance" src="/images/romance.jpg">
+          <div class="forms_check_title">
           <input id="romantic" type="radio" name="genre" />
           <label for="romantic">Romántica</label>
+        </div>
         </div>
 
       </fieldset>
       <fieldset class="titles">
-        <legend class="bold">Tus Pelis Favoritas</legend>
-        <input type="text" placeholder="Título peli 1" />
-        <input type="text" placeholder="Título peli 2" />
-        <input type="text" placeholder="Título peli 3" />
+        <legend class="bold">Escribe los títulos</legend>
+        <label for="name">Primera peli</label>
+        <input class="js-first-movie" type="text" placeholder="Una noche en el museo" />
+        <label for="name">Segunda peli</label>
+        <input class="js-second-movie" type="text" placeholder="Matrix 1" />
+        <label for="name">Tercera peli</label>
+        <input class="js-third-movie" type="text" placeholder="Interestelar" />
       </fieldset>
     </fieldset>
   </div>
