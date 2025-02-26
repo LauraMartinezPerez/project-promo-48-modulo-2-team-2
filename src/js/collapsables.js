@@ -1,31 +1,82 @@
-/* console.log("fichero colapsables");
+console.log("fichero colapsables");
 
 const userName = document.querySelector(".js-name");
 const listName = document.querySelector(".js-list-name");
 const img = document.querySelector(".js-img");
 
+
 const designTitle = document.querySelector(".js-design-title");
 const designForm = document.querySelector(".js-design-form");
+const fillTitle = document.querySelector(".js-fill-title");
+const fillForm = document.querySelector(".js-fill-form");
+const shareTitle = document.querySelector(".js-share-title");
+const shareForm = document.querySelector(".js-share-form");
 
-function handleClickFormDesign () {
-    if (designForm.classList.contains ("collapsed")) {
-        designForm.classList.remove ("collapsed");
+
+//Mostrar form design
+function showFormDesign () {
+    hideFormFill();
+    hideFormShare();
+    designForm.classList.remove("collapsed");
+}
+//Ocultar form Design
+function hideFormDesign () {
+    designForm.classList.add("collapsed");
+}
+//Alternar abrir y cerrar form design
+function showAndHideFormDesign () {
+    if (designForm.classList.contains("collapsed")) {
+        showFormDesign ();
     }
     else {
-        designForm.classList.add ("collapsed");
+        hideFormDesign ();
     }
-}  
-
-designTitle.addEventListener ("click", handleClickFormDesign);
-
- */
-function showAndHiddenForm() {    
-    designForm.classList.toggle("collapsed");
-    console.log("escuchando el click");
-    if (designTitle.classList.contains("collapsed"))
 }
 
-designTitle.addEventListener("click", (event) => {
-    event.preventDefault();
-    showAndHiddenForm();
-})
+designTitle.addEventListener ("click", showAndHideFormDesign);
+
+//Mostrar form fill
+function showFormFill () {
+    hideFormDesign ();
+    hideFormShare ();
+    fillForm.classList.remove("collapsed");
+}
+//Ocultar form fill
+function hideFormFill () {
+    fillForm.classList.add("collapsed");
+}
+//Alternar abrir y cerrar form fill
+function showAndHideFormFill () {
+    if (fillForm.classList.contains("collapsed")) {
+        showFormFill ();
+    }
+    else {
+        hideFormFill ();
+    }
+}
+
+fillTitle.addEventListener ("click", showAndHideFormFill);
+
+//Mostrar form share
+function showFormShare () {
+    hideFormDesign ();
+    hideFormFill();
+    shareForm.classList.remove("collapsed");
+}
+//Ocultar form share
+function hideFormShare () {
+    shareForm.classList.add("collapsed");
+}
+//Alternar abrir y cerrar form share
+function showAndHideFormShare () {
+    if (shareForm.classList.contains("collapsed")) {
+        showFormShare ();
+    }
+    else {
+        hideFormShare ();
+    }
+}
+
+shareTitle.addEventListener ("click", showAndHideFormShare);
+
+
