@@ -1,7 +1,7 @@
 @use "../core/variables" as vars;
 
 .container-card-one {
-    background-color: vars.$green;
+    // background-color: vars.$green;
 }
 
 .card-title {
@@ -10,7 +10,7 @@
 }
 
 .card-previw {
-   background-color: vars.$blue;
+    background-color: vars.$blue;
 }
 .img-category {
     height: 20px;   
@@ -26,4 +26,50 @@
     font-family: "Inter", serif;
     font-size: 40px;
     background-color: black;
+div.card-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+button.share-btn {
+    width: 100%;
+    height: 50px;
+    margin: 40px;
+    background-color: vars.$green;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: vars.$yellow;
+    border: 2.5px solid vars.$blue;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+div.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+div.social-icons img {
+    width: 50px;    
+}
+
+button.reset-btn {
+    width: 100%;
+    height: 50px;
+    margin: 40px;
+    background-color: vars.$green;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: vars.$yellow;
+    border: 2.5px solid vars.$blue;
+    border-radius: 20px;
+    padding: 10px 20px;
 }
