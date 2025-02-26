@@ -1,4 +1,17 @@
-.card_title
-{
-    background-color: pink;
+@use "../core/variables" as vars;
+
+.container-card-one {
+    background-color: vars.$green;
+}
+
+.card-title {
+    color: white;
+    text-align: center;
+}
+
+.card-previw {
+   background-color: vars.$blue;
+}
+.img-category {
+    height: 20px;   
 }
