@@ -1,11 +1,12 @@
 console.log("ficheros forms");
 
-const userNamelist = document.querySelector(".js-name");
+const userNamelist = document.querySelector(".js-name-forms");
+const namePreview = document.querySelector(".js-name-preview");
 const userListName = document.querySelector(".js-list-name");
 
-/*Faltan las constantes donde se pintan estos dos datos 
-en la previsualización
-userListName.addEventListener("input", (event) => {
-nombre de dónde se rellena la tarjeta al previsualizar.innerHTML = event.target.value;
 
-})*/
+userNamelist.addEventListener("input", (event) => {
+event.preventDefault();
+namePreview.innerHTML = event.target.value;
+
+}) 
