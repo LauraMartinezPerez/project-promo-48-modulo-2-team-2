@@ -1,17 +1,36 @@
 @use "../core/variables" as vars;
 
-.container-card-one {
-    // background-color: vars.$green;
+.info {
+    background-color: blue;
+    width: 80%;
+}
+
+.user-name-photo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.genre {
+    color: white;
+    font-family: vars.$font-main;
 }
 
 .card-title {
     color: vars.$blue;
     text-align: center;
+    font-family: vars.$font-main;
+    color: white;
+    padding: 10px;
 }
 
 .card-previw {
-    background-color: vars.$green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    background-color: green;
 }
+
 .img-category {
     height: 20px;   
 }
@@ -19,6 +38,7 @@
 .preview-name {
     color: white;
     font-size: large;
+    padding: 10px;
 }
 
 div.img-category {
@@ -37,9 +57,19 @@ div.img-category img {
 .card_list_style {
     color:white;
     font-family: "Inter", serif;
-    font-size: 40px;
+    font-size: 20px;
+    padding: 2px;
+    line-height: 50px;
     // background-color: black;
 }
+
+.card_list_title {
+    color:white;
+    font-family: "Inter", serif;
+    font-size: 20px;
+    padding: 2px;
+}
+
 
 div.card-foot {
     display: flex;
