@@ -1,16 +1,15 @@
 @use "../core/variables" as vars;
 
 .hero-container {
-   background-color: vars.$yellow;
-   width: 100%;
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
-   gap: 30px;
+    background-color: vars.$yellow;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
-
 
 .hero-img-container {
     display: flex;
@@ -38,7 +37,6 @@
 }
 
 .hero-text-container {
-
     font-family: vars.$font-main;
     color: vars.$blue;
     width: 80%;
@@ -48,16 +46,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
-
 
 .hero-logo {
     width: 120px;
     transform: rotate(-20deg);
-
 }
-
 
 .hero-step-container {
     display: flex;
@@ -68,8 +62,6 @@
     gap: 5px;
     font-family: vars.$font-main;
     color: vars.$blue;
-
-
 }
 .hero-step-design {
     background-color: vars.$white;
@@ -126,5 +118,4 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
-    
 }

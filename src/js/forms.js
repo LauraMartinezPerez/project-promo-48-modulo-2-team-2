@@ -18,6 +18,11 @@ const userNamelist = document.querySelector(".js-name-forms");
 const userListName = document.querySelector(".js-list-name");
 const listTitle = document.querySelector(".js-list-movies-title");
 
+//RESET
+const listTitleContent = listTitle.innerHTML; //cuando se carga guarda el valor original RESET
+const btnReset = document.querySelector(".js-btn-reset");
+
+
 const firstMovie = document.querySelector(".js-first-movie");
 const secondMovie = document.querySelector(".js-second-movie");
 const thirdMovie = document.querySelector(".js-third-movie");
@@ -28,6 +33,12 @@ const namePreview = document.querySelector(".js-name-preview");
 const firstMoviePreview = document.querySelector(".js-peli1");
 const secondMoviePreview = document.querySelector(".js-peli2");
 const thirdMoviePreview = document.querySelector(".js-peli3");
+
+//RESET
+const nameContent = namePreview.innerHTML;
+const firstMovieContent = firstMoviePreview.innerHTML;
+const secondMovieContent = secondMoviePreview.innerHTML;
+const thirdMovieContent = thirdMoviePreview.innerHTML;
 
 // Función para pintar nombre de usuario y nombre de lista //
 
@@ -65,6 +76,9 @@ const romanticGenre = document.querySelector(".js-romantic-movie");
 const fictionGenre = document.querySelector("js-fiction-movie");
 const genrePreview = document.querySelector(".js-movie-category");
 const inputsGenre = document.querySelector(".js-genre");
+
+//RESET
+const genreContent = genrePreview.innerHTML;
 
 
 const handleGenres = (event) => {
@@ -111,3 +125,17 @@ const handleMovies = (event) => {
 
 inputsFormComplete.addEventListener("input", handleMovies); 
 */
+
+//RESET 
+
+const resetCard = () => {
+    listTitle.innerHTML = listTitleContent; //vuelve al contenido original
+    genrePreview.innerHTML = genreContent;
+    firstMoviePreview.innerHTML = firstMovieContent;
+    secondMoviePreview.innerHTML = secondMovieContent;
+    thirdMoviePreview.innerHTML = thirdMovieContent;
+    namePreview.innerHTML = nameContent;
+}
+
+btnReset.addEventListener("click", resetCard)
+

@@ -1,6 +1,7 @@
 @use "../core/variables" as vars;
 
 form.form {
+    // background-color: vars.$yellow;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -134,6 +135,10 @@ form.form {
             border-radius: 20px;
         }
 
+        & button.create-list {
+            width: 80%;
+        }
+
     }
 
 .collapsed {
@@ -163,7 +168,7 @@ form.form {
 }
 
 .containter_images_forms {
-width: 100px;
+    width: 100px;
 }
 
 .forms_image_selector {

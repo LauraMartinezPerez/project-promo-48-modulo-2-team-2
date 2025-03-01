@@ -1,4 +1,4 @@
-@use '../core/variables' as vars;
+@use "../core/variables" as vars;
 
 .header_container {
     display: flex;
@@ -10,24 +10,23 @@
     color: white;
     font-family: "Inter", serif;
     align-items: center;
-    background-image: radial-gradient(#e9c56aa6 10%, transparent 10%); 
+    background-image: radial-gradient(#e9c56aa6 10%, transparent 10%);
     background-size: 30px 30px;
-  }
+}
 
 .header_title {
-  padding-right: 40px;
+    padding-right: 40px;
 }
 
 .header_icon {
-  width: 100px;
-  // color: white;
-  display:flex;
+    width: 100px;
+    // color: white;
+    display: flex;
 }
 
 // .subtitle {
 //   font-family: "Inter", serif;
 //   color: white;
-//   font-size: 30px; 
+//   font-size: 30px;
 //   display: flex;
 // }
-
