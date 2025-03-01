@@ -8,7 +8,7 @@
     // text-align: center;
     background-color: vars.$green;
     color: white;
-    font-family: "Inter", serif;
+    font-family: vars.$font-main;
     align-items: center;
     background-image: radial-gradient(#e9c56aa6 10%, transparent 10%);
     background-size: 30px 30px;
@@ -16,12 +16,18 @@
 
 .header_title {
     padding-right: 40px;
+    color: vars.$yellow;
+    -webkit-text-stroke: 2px vars.$blue;
 }
 
 .header_icon {
     width: 100px;
     // color: white;
     display: flex;
+}
+
+a:hover {
+    transform: scale(1.2);
 }
 
 // .subtitle {
