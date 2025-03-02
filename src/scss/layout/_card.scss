@@ -1,26 +1,70 @@
 @use "../core/variables" as vars;
 
-.info {
-    background-color: blue;
-    width: 80%;
+.info_fiction {
+    width: 75%;
+    background-color: vars.$blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.info_romantic {
+    width: 75%;
+    background-image: url('/images/romance.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    filter: blur 10%;
+}
+
+.info_terror {
+    width: 75%;
+    background-image: url('/images/terror.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    filter: blur 10%;
+}
+
+.card-header {
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .user-name-photo {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 50%
+
+}
+
+.avatar-photo {
+    width: 200px;
+    align-self: right;
+    border-radius: 50%;
+    height: 200px;
 }
 
 .genre {
-    color: white;
     font-family: vars.$font-main;
+    color: vars.$yellow;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
 }
 
 .card-title {
     color: vars.$blue;
     text-align: center;
     font-family: vars.$font-main;
-    color: white;
-    padding: 10px;
+    color: vars.$yellow;
+    padding: 25px;
 }
 
 .card-previw {
@@ -28,7 +72,11 @@
     flex-direction: column;
     align-items: center;
     margin: 40px;
-    background-color: green;
+    background-color: vars.$blue;
+    background-image: radial-gradient(#E9C46A 5%, transparent 5%); 
+    background-size: 30px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
 }
 
 .img-category {
@@ -36,8 +84,9 @@
 }
 
 .preview-name {
-    color: white;
+    color: vars.$green;
     font-size: large;
+    font-family: vars.$font-main;
     padding: 10px;
 }
 
@@ -55,19 +104,23 @@ div.img-category img {
 }
 
 .card_list_style {
-    color:white;
+    color: white;
     font-family: "Inter", serif;
     font-size: 20px;
     padding: 2px;
     line-height: 50px;
-    // background-color: black;
+}
+
+.list-background {
+    background-color: #264653;
 }
 
 .card_list_title {
-    color:white;
+    color: vars.$yellow;
     font-family: "Inter", serif;
     font-size: 20px;
     padding: 2px;
+    line-height: 45px;
 }
 
 
