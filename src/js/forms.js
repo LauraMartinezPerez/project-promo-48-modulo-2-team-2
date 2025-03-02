@@ -1,5 +1,6 @@
 console.log("ficheros forms");
 
+
 // Objeto para enviar info al servidor //
 const FormData =
 {
@@ -111,3 +112,4 @@ const handleMovies = (event) => {
 
 inputsFormComplete.addEventListener("input", handleMovies); 
 */
+
