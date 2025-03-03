@@ -55,17 +55,24 @@ inputsFormDesign.addEventListener("input", handleForms);
 
 firstMovie.addEventListener("input", (event) => {
     event.preventDefault();
-    firstMoviePreview.innerHTML = event.target.value;
+    if (event.target.value === "") {
+        secondMoviePreview.innerHTML = "1: peli 1"
+    } else {secondMoviePreview.innerHTML = event.target.value;}
+    
 });
 
 secondMovie.addEventListener("input", (event) => {
     event.preventDefault();
-    secondMoviePreview.innerHTML = event.target.value;
+    if (event.target.value === "") {
+        secondMoviePreview.innerHTML = "2: peli 2"
+    } else {secondMoviePreview.innerHTML = event.target.value;}
+
 });
 
 thirdMovie.addEventListener("input", (event) => {
-    event.preventDefault();
-    thirdMoviePreview.innerHTML = event.target.value;
+    if (event.target.value === "") {
+        secondMoviePreview.innerHTML = "3: peli 3"
+    } else {secondMoviePreview.innerHTML = event.target.value;}
 });
 
 const terrorGenre = document.querySelector(".js-terror-movie");
