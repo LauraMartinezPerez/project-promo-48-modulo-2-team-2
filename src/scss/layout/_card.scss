@@ -1,47 +1,28 @@
 @use "../core/variables" as vars;
 
-.info_fiction {
+.card_preview_title {
     width: 75%;
     background-color: vars.$blue;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     padding: 10px;
     justify-content: center;
     text-align: center;
 }
 
-.info_romantic {
-    width: 75%;
-    background-image: url('/images/romance.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 10px;
-    filter: blur 10%;
-}
-
-.info_terror {
-    width: 75%;
-    background-image: url('/images/terror.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 10px;
-    filter: blur 10%;
-}
-
-.card-header {
+.card_user_name {
 display: flex;
 flex-direction: column;
 align-items: center;
+background-color: vars.$blue;
+font-family: vars.$font-main;
+color: vars.$green;
+padding: 10px;
+margin-bottom: 10px;
 }
 
 .user-name-photo {
     display: flex;
     flex-direction: column;
     border-radius: 50%
-
 }
 
 .avatar-photo {
@@ -51,12 +32,13 @@ align-items: center;
     height: 200px;
 }
 
-.genre {
+.card_genre {
     font-family: vars.$font-main;
     color: vars.$yellow;
     display: inline-block;
     text-align: center;
     line-height: 20px;
+    background-color: vars.$blue;
 }
 
 .card-title {
@@ -83,13 +65,6 @@ align-items: center;
     height: 20px;   
 }
 
-.preview-name {
-    color: vars.$green;
-    font-size: large;
-    font-family: vars.$font-main;
-    padding: 10px;
-}
-
 div.img-category {
     display: flex;
     justify-content: center;
@@ -109,6 +84,10 @@ div.img-category img {
     font-size: 20px;
     padding: 2px;
     line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .list-background {
