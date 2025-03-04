@@ -127,9 +127,9 @@ form.form {
             background-color: vars.$yellow;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            height: 300px;
-            padding: 20px;
+            height: 180px;
             border: 2.5px solid vars.$blue;
             border-radius: 20px;
         }
@@ -199,16 +199,17 @@ width: 100px;
 .upload-button {
     background-color: vars.$green;
     color: vars.$white;
-    width: 300px;
+    width: 120px;
     padding: 20px;
     border: none;
     border-radius: 10px;
     font-family: vars.$font-main;
-    font-size: 20px;
+    font-size: 13px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
 }
+
 
 .profile-image {
     width: 100px;

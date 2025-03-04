@@ -1,47 +1,28 @@
 @use "../core/variables" as vars;
 
-.info_fiction {
+.card_preview_title {
     width: 75%;
     background-color: vars.$blue;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     padding: 10px;
     justify-content: center;
     text-align: center;
 }
 
-.info_romantic {
-    width: 75%;
-    background-image: url('/images/romance.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 10px;
-    filter: blur 10%;
-}
-
-.info_terror {
-    width: 75%;
-    background-image: url('/images/terror.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 10px;
-    filter: blur 10%;
-}
-
-.card-header {
+.card_user_name {
 display: flex;
 flex-direction: column;
 align-items: center;
+background-color: vars.$blue;
+font-family: vars.$font-main;
+color: vars.$green;
+padding: 10px;
+margin-bottom: 10px;
 }
 
 .user-name-photo {
     display: flex;
     flex-direction: column;
     border-radius: 50%
-
 }
 
 .avatar-photo {
@@ -51,12 +32,13 @@ align-items: center;
     height: 200px;
 }
 
-.genre {
+.card_genre {
     font-family: vars.$font-main;
     color: vars.$yellow;
     display: inline-block;
     text-align: center;
     line-height: 20px;
+    background-color: vars.$blue;
 }
 
 .card-title {
@@ -65,29 +47,33 @@ align-items: center;
     font-family: vars.$font-main;
     color: vars.$yellow;
     padding: 25px;
+    
 }
-
+.fondo-de-pelicula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    background-image: url(/images/ciencia-ficcion.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
 .card-previw {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 40px;
     background-color: vars.$blue;
-    background-image: radial-gradient(#E9C46A 5%, transparent 5%); 
     background-size: 30px 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+   
 }
 
 .img-category {
     height: 20px;   
-}
-
-.preview-name {
-    color: vars.$green;
-    font-size: large;
-    font-family: vars.$font-main;
-    padding: 10px;
 }
 
 div.img-category {
@@ -109,6 +95,10 @@ div.img-category img {
     font-size: 20px;
     padding: 2px;
     line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .list-background {
@@ -118,9 +108,10 @@ div.img-category img {
 .card_list_title {
     color: vars.$yellow;
     font-family: "Inter", serif;
-    font-size: 20px;
+    font-size: 30px;
     padding: 2px;
     line-height: 45px;
+    
 }
 
 
@@ -158,16 +149,22 @@ div.social-icons img {
     width: 50px;    
 }
 
-button.reset-btn {
-    width: 100%;
-    height: 50px;
-    margin: 40px;
-    background-color: vars.$green;
-    font-size: 20px;
-    justify-content: space-between;
-    align-items: center;
-    color: vars.$yellow;
-    border: 2.5px solid vars.$blue;
-    border-radius: 20px;
-    padding: 10px 20px;
+.reset-btn-container {
+    display: flex;
+    justify-content: center;
 }
+
+button.reset-btn {
+    background-color: vars.$green;
+    color: vars.$white;
+    width: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: vars.$font-main;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+

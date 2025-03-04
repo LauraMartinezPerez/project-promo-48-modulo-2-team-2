@@ -1,5 +1,12 @@
 console.log("ficheros forms");
 
+const resetBtn = document.querySelector(".js-reset-btn");
+
+
+
+
+
+
 // Objeto para enviar info al servidor //
 const FormData =
 {
@@ -25,6 +32,7 @@ const thirdMovie = document.querySelector(".js-third-movie");
 // Constantes de Preview //
 
 const namePreview = document.querySelector(".js-name-preview");
+const cardListTitle = document.querySelector(".js-card-list-title");
 const firstMoviePreview = document.querySelector(".js-peli1");
 const secondMoviePreview = document.querySelector(".js-peli2");
 const thirdMoviePreview = document.querySelector(".js-peli3");
@@ -47,17 +55,24 @@ inputsFormDesign.addEventListener("input", handleForms);
 
 firstMovie.addEventListener("input", (event) => {
     event.preventDefault();
-    firstMoviePreview.innerHTML = event.target.value;
+    if (event.target.value === "") {
+        secondMoviePreview.innerHTML = "1: peli 1"
+    } else {secondMoviePreview.innerHTML = event.target.value;}
+    
 });
 
 secondMovie.addEventListener("input", (event) => {
     event.preventDefault();
-    secondMoviePreview.innerHTML = event.target.value;
+    if (event.target.value === "") {
+        secondMoviePreview.innerHTML = "2: peli 2"
+    } else {secondMoviePreview.innerHTML = event.target.value;}
+
 });
 
 thirdMovie.addEventListener("input", (event) => {
-    event.preventDefault();
-    thirdMoviePreview.innerHTML = event.target.value;
+    if (event.target.value === "") {
+        secondMoviePreview.innerHTML = "3: peli 3"
+    } else {secondMoviePreview.innerHTML = event.target.value;}
 });
 
 const terrorGenre = document.querySelector(".js-terror-movie");
@@ -68,16 +83,16 @@ const inputsGenre = document.querySelector(".js-genre");
 
 
 const handleGenres = (event) => {
+  
     const genreValue = parseInt(event.target.value)
     if (genreValue === 1) {
         genrePreview.innerHTML = "Terror";
     } else if (genreValue === 2) {
         genrePreview.innerHTML = "Ficción";
     } else if (genreValue === 3) {
-        genrePreview.innerHTML = "Romántica";
-        
-    }
-};
+        genrePreview.innerHTML = "Romántica";}
+    else genrePreview.innerHTML = "";
+    };
 
 inputsGenre.addEventListener("input", handleGenres);
 
@@ -92,10 +107,23 @@ const changeBackground = (event) => {
         moviePreview.classList.add("info_fiction");
     } else if (event.target.id === "romantic") {
         moviePreview.classList.add("info_romantic");
+       
     }
 }
 
 moviePhoto.addEventListener("input", changeBackground);
+
+resetBtn.addEventListener("click", () => {
+    namePreview.innerHTML = ("Tu nombre");
+    genrePreview.innerHTML = ("");
+    firstMoviePreview.innerHTML = ("1: peli 1");
+    secondMoviePreview.innerHTML = ("2: peli 2");
+    thirdMoviePreview.innerHTML = ("3: peli 3");
+    listTitle.innerHTML = ("Mis pelis chulas");
+
+})
+
+
 // -- //
 /*
 const inputsFormComplete = document.querySelector(".js-complete-titles");
@@ -111,3 +139,4 @@ const handleMovies = (event) => {
 
 inputsFormComplete.addEventListener("input", handleMovies); 
 */
+
