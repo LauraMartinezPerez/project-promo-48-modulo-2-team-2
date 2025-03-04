@@ -47,18 +47,29 @@ margin-bottom: 10px;
     font-family: vars.$font-main;
     color: vars.$yellow;
     padding: 25px;
+    
 }
-
+.fondo-de-pelicula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    background-image: url(/images/ciencia-ficcion.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
 .card-previw {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 40px;
     background-color: vars.$blue;
-    background-image: radial-gradient(#E9C46A 5%, transparent 5%); 
     background-size: 30px 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+   
 }
 
 .img-category {
@@ -100,6 +111,7 @@ div.img-category img {
     font-size: 30px;
     padding: 2px;
     line-height: 45px;
+    
 }
 
 
