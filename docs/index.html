@@ -1,71 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="../src/scss/main.scss">
-  </head>
+    <head>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <title>Document</title>
+      <link rel="stylesheet" href="./assets/main-bf0d86a1.css">
+    </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-  <img src="./images/logo-adalab.png" alt="Adalab">
-  <h1>Bienvenidos a Adalab</h1>
-</header>
+    <body>
 
-      <main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-    </li>
-    <li>
-      <a class="{=$aClass}" href="./more-info.html">Más info del starter kit</a>
-
-    </li>
-  </ul>
-</main>
-
-      <footer class="page__footer">
-  <small>
-    &copy; Todos los derechos reservados
-    <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-  </small>
-</footer>
-
+        
+<header id= "header_containter" class="header_container">
+    <div class="header_icon">
+        <a href="/index.html">
+            <img class= "header_icon" src="./images/logo.svg">
+        </a>
     </div>
-    <script src="./js/main.js"></script>
-  </body>
+    <div class="header_texts"><h1 class="header_title">PELISCHULAS</h1><h2 class="subtitle"></h2>
+    </header>
+
+
+        <!-- HERO -->
+
+<main class="hero-container">
+
+    <section class="hero-img-container">
+        <img class="hero-img-scifi" src="./images/ciencia-ficcion.jpg" alt="imagen de cartel de ciencia ficcion">
+        <img class="hero-img-terror" src="./images/terror.jpg" alt="imagen de cartel  de terror">
+        <img class="hero-img-romance" src="./images/romance.jpg">
+    </section>
+    
+    <section class="hero-text-container">
+
+            <img class="hero-logo" src="./images/logo-2.svg" alt="logo">
+
+            <h1 class="hero-title">Crea tu lista de Pelis Chulas</h1>
+            <p class="hero.text">Comparte tu tarjeta para demostrar el gran crítico de cine que llevas dentro</p>
+        
+    </section>
+
+    <section class="hero-step-container">
+        <div class="hero-step-design">
+            <img class="hero-icon-design" src="./images/disena-icon.svg" alt="icono-diseñar">
+            <h2 class="hero-text-design">Paso 1: Diseña</h2>
+        </div>
+
+        <div class="hero-step-fill">
+            <img class="hero-icon-fill" src="./images/rellena-icon.svg" alt="icono-rellenar">
+            <h2 class="hero-text-fill">Paso 2: Rellena</h2>
+        </div>
+
+        <div class="hero-step-share">
+            <img class="hero-icon-share" src="./images/comparte-icon.svg" alt="icono-compartir">
+            <h2 class="hero-text-share">Paso 3: Comparte</h2>
+        </div>
+    </section>
+
+    <button class="button"><a href="/forms.html">Comenzar</a></button>
+
+</main>
+        <section class="footer-container">
+        <p class="footer-left">
+            <span class="copyright">&copy;</span> 
+            <span class="year">2025</span> </p>
+        <p class="footer-middle">Nuestro sitio Web de pelis chulas</p>
+    <div>
+        <img class="footer-icon" src="./images/logo.svg" alt="logoClaqueta">
+    </div>
+</section>
+
+
+    
+
+
+        <script src="./js/main.js"></script>
+    </body>
 </html>
