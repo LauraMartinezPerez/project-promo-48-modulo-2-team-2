@@ -54,12 +54,25 @@ margin-bottom: 10px;
     flex-direction: column;
     align-items: center;
     margin: 40px;
-    background-image: url(/images/ciencia-ficcion.jpg); 
+    background-color: vars.$yellow;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 10px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
 }
+
+.fictionbg {
+    background-image: url(/images/ciencia-ficcion.jpg); 
+}
+
+.terrorbg {
+    background-image: url(/images/terror.jpg);
+}
+
+.romancebg {
+    background-image: url(/images/romance.jpg);
+}
+
 .card-previw {
     display: flex;
     flex-direction: column;
@@ -103,6 +116,11 @@ div.img-category img {
 
 .list-background {
     background-color: #264653;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .card_list_title {

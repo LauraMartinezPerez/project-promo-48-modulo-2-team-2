@@ -56,8 +56,8 @@ inputsFormDesign.addEventListener("input", handleForms);
 firstMovie.addEventListener("input", (event) => {
     event.preventDefault();
     if (event.target.value === "") {
-        secondMoviePreview.innerHTML = "1: peli 1"
-    } else {secondMoviePreview.innerHTML = event.target.value;}
+        firstMoviePreview.innerHTML = "1: peli 1"
+    } else {firstMoviePreview.innerHTML = event.target.value;}
     
 });
 
@@ -71,8 +71,8 @@ secondMovie.addEventListener("input", (event) => {
 
 thirdMovie.addEventListener("input", (event) => {
     if (event.target.value === "") {
-        secondMoviePreview.innerHTML = "3: peli 3"
-    } else {secondMoviePreview.innerHTML = event.target.value;}
+        thirdMoviePreview.innerHTML = "3: peli 3"
+    } else {thirdMoviePreview.innerHTML = event.target.value;}
 });
 
 const terrorGenre = document.querySelector(".js-terror-movie");
@@ -80,6 +80,7 @@ const romanticGenre = document.querySelector(".js-romantic-movie");
 const fictionGenre = document.querySelector("js-fiction-movie");
 const genrePreview = document.querySelector(".js-movie-category");
 const inputsGenre = document.querySelector(".js-genre");
+const movieBackground = document.querySelector(".js-movie-background");
 
 
 const handleGenres = (event) => {
@@ -87,31 +88,26 @@ const handleGenres = (event) => {
     const genreValue = parseInt(event.target.value)
     if (genreValue === 1) {
         genrePreview.innerHTML = "Terror";
+        movieBackground.classList.add("terrorbg");
+        movieBackground.classList.remove("fictionbg");
+        movieBackground.classList.remove("romancebg");
     } else if (genreValue === 2) {
         genrePreview.innerHTML = "Ficción";
+        movieBackground.classList.add("fictionbg");
+        movieBackground.classList.remove("romancebg");
+        movieBackground.classList.remove("terrorbg");
     } else if (genreValue === 3) {
-        genrePreview.innerHTML = "Romántica";}
+        genrePreview.innerHTML = "Romántica";
+        movieBackground.classList.add("romancebg");
+        movieBackground.classList.remove("fictionbg");
+        movieBackground.classList.remove("terrorbg");
+    }
     else genrePreview.innerHTML = "";
     };
 
 inputsGenre.addEventListener("input", handleGenres);
 
-const moviePhoto = document.querySelector(".js-photo-forms");
-const moviePreview = document.querySelector(".js-movie-image")
-
-
-const changeBackground = (event) => {
-    if (event.target.id === "terror") {
-        moviePreview.classList.add("info_terror");
-    } else if (event.target.id === "fiction") {
-        moviePreview.classList.add("info_fiction");
-    } else if (event.target.id === "romantic") {
-        moviePreview.classList.add("info_romantic");
-       
-    }
-}
-
-moviePhoto.addEventListener("input", changeBackground);
+// Boton Reset
 
 resetBtn.addEventListener("click", () => {
     namePreview.innerHTML = ("Tu nombre");
@@ -123,20 +119,33 @@ resetBtn.addEventListener("click", () => {
 
 })
 
+// Pintar fondo de pelicula en card al elegeri genero
 
-// -- //
-/*
-const inputsFormComplete = document.querySelector(".js-complete-titles");
-const handleMovies = (event) => {
-    if (event.target.id === "peli1") {
-        firstMoviePreview.innerHTML === event.target.value;
-    } else if (event.target.id === "peli2") {
-        secondMoviePreview.innerHTML === event.target.value;
-    } else if (event.target.id === "peli3") {
-        thirdMoviePreview.innerHTML === event.target.value;
+
+
+
+
+// ???????????
+
+/* const moviePhoto = document.querySelector(".js-photo-forms");
+const moviePreview = document.querySelector(".js-movie-image") */
+
+
+/* const changeBackground = (event) => {
+    if (event.target.id === "terror") {
+        moviePreview.classList.add("info_terror");
+    } else if (event.target.id === "fiction") {
+        moviePreview.classList.add("info_fiction");
+    } else if (event.target.id === "romantic") {
+        moviePreview.classList.add("info_romantic");
+       
     }
-};
+}
 
-inputsFormComplete.addEventListener("input", handleMovies); 
-*/
+moviePhoto.addEventListener("input", changeBackground); */
+
+
+
+
+
 
