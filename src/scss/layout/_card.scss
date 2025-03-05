@@ -1,49 +1,89 @@
 @use "../core/variables" as vars;
 
+.card_preview_title {
+    width: 75%;
+    background-color: vars.$blue;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.card_user_name {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: vars.$blue;
+font-family: vars.$font-main;
+color: vars.$green;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+.user-name-photo {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%
+}
+
+.avatar-photo {
+    width: 200px;
+    align-self: right;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.card_genre {
+    font-family: vars.$font-main;
+    color: vars.$yellow;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    background-color: vars.$blue;
+}
+
+.card-title {
+    color: vars.$blue;
+    text-align: center;
+    color: vars.$yellow;
+    font-family: vars.$font-main;
+    color: vars.$yellow;
+    padding: 25px;
+    
+}
+.fondo-de-pelicula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    background-color: vars.$yellow;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fictionbg {
+    background-image: url(/images/ciencia-ficcion.jpg); 
+}
+
+.terrorbg {
+    background-image: url(/images/terror.jpg);
+}
+
+.romancebg {
+    background-image: url(/images/romance.jpg);
+}
+
 .card-previw {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 40px;
     background-color: vars.$blue;
-}
-
-.card-title {
-    text-align: center;
-    font-family: vars.$font-main;
-    color: vars.$yellow;
-    padding: 25px;
-}
-
-.preview-name {
-    color: black;
-    font-size: large;
-    font-family: vars.$font-main;
-    padding: 10px;
-}
-.info {
-    background-color: vars.$blue;
-    width: 80%;
-}
-
-.user-name-photo {
-    display: flex;
-    justify-content: space-between;
-}
-
-.genre {
-    text-align: center;
-    color: vars.$yellow;
-    font-family: vars.$font-main;
-    line-height: 20px;
-}
-
-.card_list_title {
-    color:black;
-    font-family: vars.$font-main;
-    font-size: 20px;
-    padding: 2px;
-    line-height: 45px;
+    background-size: 30px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+   
 }
 
 
@@ -51,8 +91,6 @@
 .img-category {
     height: 20px;   
 }
-
-
 
 div.img-category {
     display: flex;
@@ -68,13 +106,35 @@ div.img-category img {
 }
 
 .card_list_style {
-    color:vars.$green;
+    color: white;
     font-family: "Inter", serif;
     font-size: 20px;
     padding: 2px;
     line-height: 50px;
-    // background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
+
+.list-background {
+    background-color: #264653;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card_list_title {
+    color: vars.$yellow;
+    font-family: "Inter", serif;
+    font-size: 30px;
+    padding: 2px;
+    line-height: 45px;
+    
+}
+
 
 div.card-foot {
     display: flex;
@@ -110,16 +170,22 @@ div.social-icons img {
     width: 50px;    
 }
 
-button.reset-btn {
-    width: 100%;
-    height: 50px;
-    margin: 40px;
-    background-color: vars.$green;
-    font-size: 20px;
-    justify-content: space-between;
-    align-items: center;
-    color: vars.$yellow;
-    border: 2.5px solid vars.$blue;
-    border-radius: 20px;
-    padding: 10px 20px;
+.reset-btn-container {
+    display: flex;
+    justify-content: center;
 }
+
+button.reset-btn {
+    background-color: vars.$green;
+    color: vars.$white;
+    width: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: vars.$font-main;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+

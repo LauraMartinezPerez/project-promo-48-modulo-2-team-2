@@ -13,9 +13,7 @@
 
 
 .hero-img-container {
-
     display: flex;
-    position: relative;
     justify-content: space-between;
     align-items: center;
     gap: 0px;
@@ -23,23 +21,18 @@
     width: 90%;
 }
 .hero-img-terror {
-    
-    width: 150px;
+    width: 100px;
     height: auto;
-    position: absolute;
-    top: -20px;
-    margin:0 110px;
-    z-index: 1;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
 }
 .hero-img-scifi {
-    width: 150px;
+    width: 100px;
     height: auto;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero-img-romance {
-    width: 150px;
+    width: 100px;
     height: auto;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
 }

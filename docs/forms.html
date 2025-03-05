@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/4e18aa373e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/main-c9cbde72.css">
+  </head>
+
+    <body>
+        
+<header id= "header_containter" class="header_container">
+    <div class="header_icon">
+        <a href="/index.html">
+            <img class= "header_icon" src="./images/logo.svg">
+        </a>
+    </div>
+    <div class="header_texts"><h1 class="header_title">PELISCHULAS</h1><h2 class="subtitle"></h2>
+    </header>
+
+
+        <main>
+            <div class="forms">
+                <form class="form" action="https://dev.adalab.es/api/form" method="POST">
+
+    <section class="design">
+    <div class="design js-design-title">
+        <h2>Diseña</h2>
+        <span class="dropdown"><i class="fa-solid fa-caret-down"></i></span>
+    </div>
+    <div class="collapsed js-design-form">
+    <fieldset class="design js-forms-design">
+        <label for="name">Nombre</label>
+        <input
+            class="js-name-forms"
+            type="text"
+            placeholder="Escribe tu nombre"
+            id="name"
+        />
+
+        <div class="profile-container"><label for="photo" class="upload-button">Sube tu foto</label>
+        <input
+            class="file js-photo-forms js__profile-upload-btn"
+            type="file"
+            id="photo"/>
+            <div><img class="profile-image js__profile-image"></div></div>
+
+        <label for="list">Título de la lista</label>
+        <input
+            class="js-list-name"
+            type="text"
+            placeholder="Mis pelis top este verano"
+            id="list"
+        />
+    </fieldset>
+</div>
+</section>
+
+    <section class="fill">
+  <div class="fill js-fill-title">
+    <h2>Rellena</h2>
+    <span class="dropdown"><i class="fa-solid fa-caret-down"></i></span>
+  </div>
+
+  <div class="collapsed js-fill-form form_fill_content">
+    <fieldset class="fill js-title-names">
+      <fieldset class="genre js-genre">
+          <legend class="bold">Género de tu lista de pelis</legend>
+
+        <div class="forms_image_selector">
+          <img class= "hero-img-scifi" src="./images/terror.jpg" alt="imagen de cartel  de terror">
+          <div class="forms_check_title">
+          <input class = "js-terror-movie" value="1" type="radio" name="genre" />
+          <label for="terror">Terror</label></div>
+        </div>
+
+          <div class="forms_image_selector">
+          <img class="hero-img-scifi" src="./images/ciencia-ficcion.jpg" alt="imagen de cartel de ciencia ficcion">        
+          <div class="forms_check_title">
+          <input class = "js-fiction-movie" value="2" type="radio" name="genre" />
+          <label for="fiction">Ciencia ficción</label></div>
+        </div>
+
+        <div class="forms_image_selector">
+          <img class="hero-img-romance" src="./images/romance.jpg">
+          <div class="forms_check_title">
+          <input class= "js-romantic-movie" value="3" type="radio" name="genre" />
+          <label for="romantic">Romántica</label>
+        </div>
+        </div>
+
+      </fieldset>
+      <fieldset class="titles js-complete-titles">
+        <legend class="bold">Escribe los títulos</legend>
+        <label for="peli1">Primera peli</label>
+        <input class="js-first-movie" type="text" placeholder="Una noche en el museo" id= "peli1" />
+        <label for="peli2">Segunda peli</label>
+        <input class="js-second-movie" type="text" placeholder="Matrix 1" id= "peli2"/>
+        <label for="peli3">Tercera peli</label>
+        <input class="js-third-movie" type="text" placeholder="Interestelar" id= "peli3" />
+      </fieldset>
+    </fieldset>
+  </div>
+</section>
+
+    <section class="share">
+    <div class="share js-share-title">
+        <h2>Comparte</h2>
+        <span class="dropdown"><i class="fa-solid fa-caret-down"></i></span>
+    </div>
+    <div class="collapsed share-container js-share-form">
+    <fieldset class="share">
+        <button class="button">Crear lista</button>
+
+    </fieldset>
+</div>
+</section>
+
+
+    <div class="reset-btn-container">       
+        <button type="reset" class="reset-btn js-reset-btn">Reset</button>
+    </div>
+</form>
+
+            </div>
+            <div class="preview">
+                
+
+    <div class="fondo-de-pelicula">
+        <div class="card-previw">
+            <div class="card_preview_title js-movie-image">
+                <p class="js-list-movies-title card_list_title">Mis pelis chulas</p>
+            </div>
+
+            <div class="card_genre">
+                <p>Género: 
+                    <span class="romance-category js-movie-category"></span>
+                </p>
+            </div>
+                
+            <div class="card_list_style">
+                <ul>
+                    <span class="list-background"><li class="js-peli1 list-background">1: peli 1</li> </span>
+                    <span class="list-background"></span><li class="js-peli2 list-background">2: peli 2</li> </span>
+                    <span class="list-background"></span><li class="js-peli3 list-background">3: peli 3</li> </span>
+                </ul>
+            </div>
+        
+            <div class="card_user_name">
+                <p class="js-name-preview">Tu nombre</p>
+            </div>
+
+            <div class= "js-user-photo">
+                <img class="avatar-photo js__profile-preview" src="./images/mujerprogramadora.png" alt="logo">
+            </div>
+        </div>
+    </div> 
+
+            </div>
+        </main>
+        <section class="footer-container">
+        <p class="footer-left">
+            <span class="copyright">&copy;</span> 
+            <span class="year">2025</span> </p>
+        <p class="footer-middle">Nuestro sitio Web de pelis chulas</p>
+    <div>
+        <img class="footer-icon" src="./images/logo.svg" alt="logoClaqueta">
+    </div>
+</section>
+
+
+    
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>

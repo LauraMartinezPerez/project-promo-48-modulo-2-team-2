@@ -4,7 +4,7 @@
         <span class="dropdown"><i class="fa-solid fa-caret-down"></i></span>
     </div>
     <div class="collapsed js-design-form">
-    <fieldset class="design">
+    <fieldset class="design js-forms-design">
         <label for="name">Nombre</label>
         <input
             class="js-name-forms"
@@ -13,12 +13,12 @@
             id="name"
         />
 
-        <label for="name">Sube tu foto</label>
+        <div class="profile-container"><label for="photo" class="upload-button">Sube tu foto</label>
         <input
-            class="js-photo-forms"
-            type="image"
+            class="file js-photo-forms js__profile-upload-btn"
+            type="file"
             id="photo"/>
-            <button>Subir</button>
+            <div><img class="profile-image js__profile-image"></div></div>
 
         <label for="list">Título de la lista</label>
         <input
