@@ -14,8 +14,6 @@ Te permite recomendar tres películas del género que desees (terror, ciencia fi
 
 -   main.js: Contiene la lógica para manejar y renderizar las recomendaciones de películas.
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) con una versión superior a la 14 para trabajar con este Starter Kit:
-
 ### Cómo usarlo:
 
 1. **Clona este repositorio.**
