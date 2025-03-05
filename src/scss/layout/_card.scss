@@ -1,7 +1,28 @@
 @use "../core/variables" as vars;
 
+.card-previw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    background-color: vars.$blue;
+}
+
+.card-title {
+    text-align: center;
+    font-family: vars.$font-main;
+    color: vars.$yellow;
+    padding: 25px;
+}
+
+.preview-name {
+    color: black;
+    font-size: large;
+    font-family: vars.$font-main;
+    padding: 10px;
+}
 .info {
-    background-color: blue;
+    background-color: vars.$blue;
     width: 80%;
 }
 
@@ -11,35 +32,27 @@
 }
 
 .genre {
-    color: white;
-    font-family: vars.$font-main;
-}
-
-.card-title {
-    color: vars.$blue;
     text-align: center;
+    color: vars.$yellow;
     font-family: vars.$font-main;
-    color: white;
-    padding: 10px;
+    line-height: 20px;
 }
 
-.card-previw {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px;
-    background-color: green;
+.card_list_title {
+    color:black;
+    font-family: vars.$font-main;
+    font-size: 20px;
+    padding: 2px;
+    line-height: 45px;
 }
+
+
 
 .img-category {
     height: 20px;   
 }
 
-.preview-name {
-    color: white;
-    font-size: large;
-    padding: 10px;
-}
+
 
 div.img-category {
     display: flex;
@@ -55,21 +68,13 @@ div.img-category img {
 }
 
 .card_list_style {
-    color:white;
+    color:vars.$green;
     font-family: "Inter", serif;
     font-size: 20px;
     padding: 2px;
     line-height: 50px;
     // background-color: black;
 }
-
-.card_list_title {
-    color:white;
-    font-family: "Inter", serif;
-    font-size: 20px;
-    padding: 2px;
-}
-
 
 div.card-foot {
     display: flex;
