@@ -1,6 +1,6 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+![PelisChulas](/public/images/logo.svg)
 
-# PelisChulas
+# PelisChulas 🍿🎬🍿
 
 Este proyecto ha sido desarrollado por un equipo de cuatro programadoras chulas.
 
