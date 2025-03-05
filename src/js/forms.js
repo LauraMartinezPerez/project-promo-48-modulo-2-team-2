@@ -113,6 +113,7 @@ inputsGenre.addEventListener("input", handleGenres);
 
 // Boton Reset
 
+const photoTemplate = "/images/user.png";
 
 resetBtn.addEventListener("click", () => {
     namePreview.innerHTML = ("Tu nombre");
@@ -124,8 +125,10 @@ resetBtn.addEventListener("click", () => {
     secondMoviePreview.innerHTML = ("2: peli 2");
     thirdMoviePreview.innerHTML = ("3: peli 3");
     listTitle.innerHTML = ("Mis pelis chulas");
-    userPhotoPreview.src = "/images/user.png";
-    userProfilePhoto.src = "/images/user.png";
+    userPhotoPreview.src = photoTemplate;
+    userProfilePhoto.src = photoTemplate;
 
 })
+
+
 
