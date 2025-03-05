@@ -75,6 +75,8 @@ thirdMovie.addEventListener("input", (event) => {
     } else {thirdMoviePreview.innerHTML = event.target.value;}
 });
 
+// Constante y Funcion poner genero en la preview y Pintar fondo de pelicula en card al elegeri genero
+
 const terrorGenre = document.querySelector(".js-terror-movie");
 const romanticGenre = document.querySelector(".js-romantic-movie");
 const fictionGenre = document.querySelector("js-fiction-movie");
@@ -119,7 +121,7 @@ resetBtn.addEventListener("click", () => {
 
 })
 
-// Pintar fondo de pelicula en card al elegeri genero
+
 
 
 
