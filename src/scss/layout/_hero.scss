@@ -1,16 +1,14 @@
 @use "../core/variables" as vars;
 
 .hero-container {
-   background-color: vars.$yellow;
-   width: 100%;
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
-   gap: 30px;
+    background-color: vars.$yellow;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
-
 
 .hero-img-container {
     display: flex;
@@ -19,45 +17,45 @@
     gap: 0px;
     margin-top: 50px;
     width: 90%;
+    position: relative;
 }
 .hero-img-terror {
-    width: 100px;
+    width: 30%;
     height: auto;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    z-index: 2;
 }
 .hero-img-scifi {
-    width: 100px;
+    width: 28%;
     height: auto;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    left: 15%;
 }
 
 .hero-img-romance {
-    width: 100px;
+    width: 28%;
     height: auto;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    right: 15%;
 }
 
 .hero-text-container {
-
     font-family: vars.$font-main;
     color: vars.$blue;
     width: 80%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
-
 
 .hero-logo {
     width: 120px;
     transform: rotate(-20deg);
-
 }
-
 
 .hero-step-container {
     display: flex;
@@ -68,8 +66,6 @@
     gap: 5px;
     font-family: vars.$font-main;
     color: vars.$blue;
-
-
 }
 .hero-step-design {
     background-color: vars.$white;
@@ -126,5 +122,90 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
-    
+}
+
+.hero-title {
+    font-size: 30px;
+    padding: 20px;
+}
+.hero-text {
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .hero-step-design {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .hero-step-fill {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .hero-step-share {
+        width: 100%;
+        max-width: 400px;
+    }
+    .hero-container {
+        width: 100%;
+        gap: 60px;
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+    .hero-text {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-container {
+        gap: 60px;
+        justify-content: none;
+    }
+    .hero-step-design {
+        width: 100%;
+        max-width: 500px;
+    }
+    .hero-icon-design {
+        width: 60px;
+        height: 60px;
+    }
+
+    .hero-text-design {
+        font-size: 30px;
+    }
+
+    .hero-step-fill {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .hero-text-fill {
+        font-size: 30px;
+    }
+
+    .hero-icon-fill {
+        width: 60px;
+        height: 60px;
+    }
+    .hero-step-share {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .hero-text-share {
+        font-size: 30px;
+    }
+
+    .hero-icon-share {
+        width: 60px;
+        height: 60px;
+    }
+
+    .hero-text {
+        font-size: 25px;
+    }
 }
