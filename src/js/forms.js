@@ -24,6 +24,7 @@ const FormData =
 const userNamelist = document.querySelector(".js-name-forms");
 const userListName = document.querySelector(".js-list-name");
 const listTitle = document.querySelector(".js-list-movies-title");
+const userProfilePhoto = document.querySelector(".js__profile-image");
 
 const firstMovie = document.querySelector(".js-first-movie");
 const secondMovie = document.querySelector(".js-second-movie");
@@ -36,6 +37,7 @@ const cardListTitle = document.querySelector(".js-card-list-title");
 const firstMoviePreview = document.querySelector(".js-peli1");
 const secondMoviePreview = document.querySelector(".js-peli2");
 const thirdMoviePreview = document.querySelector(".js-peli3");
+const userPhotoPreview = document.querySelector(".js-user-photo");
 
 // Función para pintar nombre de usuario y nombre de lista //
 
@@ -75,6 +77,8 @@ thirdMovie.addEventListener("input", (event) => {
     } else {thirdMoviePreview.innerHTML = event.target.value;}
 });
 
+// Constante y Funcion poner genero en la preview y Pintar fondo de pelicula en card al elegeri genero
+
 const terrorGenre = document.querySelector(".js-terror-movie");
 const romanticGenre = document.querySelector(".js-romantic-movie");
 const fictionGenre = document.querySelector("js-fiction-movie");
@@ -109,43 +113,22 @@ inputsGenre.addEventListener("input", handleGenres);
 
 // Boton Reset
 
+const photoTemplate = "/images/user.png";
+
 resetBtn.addEventListener("click", () => {
     namePreview.innerHTML = ("Tu nombre");
     genrePreview.innerHTML = ("");
+    movieBackground.classList.remove("romancebg");
+    movieBackground.classList.remove("fictionbg");
+    movieBackground.classList.remove("terrorbg");
     firstMoviePreview.innerHTML = ("1: peli 1");
     secondMoviePreview.innerHTML = ("2: peli 2");
     thirdMoviePreview.innerHTML = ("3: peli 3");
     listTitle.innerHTML = ("Mis pelis chulas");
+    userPhotoPreview.src = photoTemplate;
+    userProfilePhoto.src = photoTemplate;
 
 })
-
-// Pintar fondo de pelicula en card al elegeri genero
-
-
-
-
-
-// ???????????
-
-/* const moviePhoto = document.querySelector(".js-photo-forms");
-const moviePreview = document.querySelector(".js-movie-image") */
-
-
-/* const changeBackground = (event) => {
-    if (event.target.id === "terror") {
-        moviePreview.classList.add("info_terror");
-    } else if (event.target.id === "fiction") {
-        moviePreview.classList.add("info_fiction");
-    } else if (event.target.id === "romantic") {
-        moviePreview.classList.add("info_romantic");
-       
-    }
-}
-
-moviePhoto.addEventListener("input", changeBackground); */
-
-
-
 
 
 
