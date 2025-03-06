@@ -168,10 +168,12 @@ width: 100px;
 
 .forms_image_selector {
     display: flex;
-    //justify-content: center;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 10px;
+    justify-content: space-between;
 }
 
 .forms_check_title {
@@ -218,3 +220,56 @@ width: 100px;
     }
   }
   
+
+.file {
+ display: none;
+
+}
+
+.upload-button {
+    background-color: vars.$green;
+    color: vars.$white;
+    width: 120px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: vars.$font-main;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border: solid;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.fieldset-genre {
+    background-color: vars.$yellow;
+    display: flex;
+    flex-direction: row;
+    color: vars.$blue; 
+    border-radius: 20px;
+    gap: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.images-order {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
