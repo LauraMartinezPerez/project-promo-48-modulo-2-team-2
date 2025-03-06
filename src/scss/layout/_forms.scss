@@ -131,19 +131,24 @@ form.form {
             align-items: center;
             border: 2.5px solid vars.$blue;
             border-radius: 20px;
+            padding: 20px 0;
             gap: 20px;
 
             & .button-create {
                 background-color: vars.$green;
                 color: vars.$white;
-                width: 300px;
+                width: 200px;
                 padding: 20px;
                 border: none;
                 border-radius: 10px;
                 font-family: vars.$font-main;
                 font-size: 20px;
                 text-align: center;
-                margin: 20px;
+
+                &:hover {
+                    background-color: vars.$blue;
+                    cursor: pointer;
+                }
             }
 
             & .social-media {
@@ -154,6 +159,12 @@ form.form {
                 text-align: center;
                 color: vars.$blue;
                 padding: 20px;
+
+                & :hover {
+                    background-color: vars.$blue;
+                    color: white;
+                    cursor: pointer;
+                }
 
                 & .list-created {
                     font-size: 20px;
