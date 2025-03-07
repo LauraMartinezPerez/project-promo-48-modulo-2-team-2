@@ -1,5 +1,7 @@
 @use "../core/variables" as vars;
-
+.forms-preview {
+    background-color: rgb(187, 242, 223);
+}
 form.form {
     display: flex;
     flex-direction: column;
@@ -182,48 +184,9 @@ width: 100px;
     gap: 5px;
     color: white;
 }
-@media (min-width: 768px) {
-    .forms-preview {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .forms {
-        width: 60%; 
-        margin-top: 30px;
-    }
-
-    .preview {
-        width: 35%; 
-    }
-}
-@media (min-width: 1024px) {
-    .forms-preview {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 20px;
-    }
-  
-    .forms {
-      width: 60%;
-      .forms-preview .forms {
-        margin-top: 30px;
-    }
-    
-    }
-  
-    .preview {
-      width: 35%;
-    }
-  }
-  
 
 .file {
  display: none;
-
 }
 
 .upload-button {
@@ -273,3 +236,48 @@ width: 100px;
     align-items: center;
     justify-content: space-between;
 }
+@media (min-width: 768px) {
+
+    .forms-preview {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .forms {
+        width: 50%; 
+        margin-top: 30px;
+    }
+    .fondo-de-pelicula {
+        max-width: 400px;
+    }
+
+
+    .preview {
+        margin-top: 30px;
+        width: 50%;
+        max-width: 500px;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .forms-preview {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 20px;
+    }
+  
+    .forms {
+      margin-top: 30px;
+      width: 50%;
+    }
+
+    .preview {
+      margin-top: 30px;
+      width: 50%;
+      max-width: 500px;
+    }
+  }
+  
