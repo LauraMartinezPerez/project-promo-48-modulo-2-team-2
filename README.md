@@ -1,5 +1,7 @@
 ![PelisChulas](/public/images/logo.svg)
 
+GitHub Pages: https://lauramartinezperez.github.io/project-promo-48-modulo-2-team-2/
+
 # PelisChulas 🍿🎬🍿
 
 Este proyecto ha sido desarrollado por un equipo de cuatro programadoras chulas.
