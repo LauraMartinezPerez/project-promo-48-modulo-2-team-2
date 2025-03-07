@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .hero-img-container {
@@ -158,13 +158,24 @@
     .hero-text {
         font-size: 20px;
     }
+
+    .hero-logo {
+        width: 150px;
+        transform: rotate(-20deg);
+    }
+    
 }
 
 @media (min-width: 1200px) {
     .hero-container {
         gap: 60px;
-        justify-content: none;
     }
+
+    .hero-logo {
+        width: 200px;
+        transform: rotate(-20deg);
+    }
+
     .hero-step-design {
         width: 100%;
         max-width: 500px;
