@@ -184,4 +184,9 @@ button.reset-btn {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
+
+    &:hover {
+        background-color: vars.$blue;
+        cursor: pointer;
+    }
 }
