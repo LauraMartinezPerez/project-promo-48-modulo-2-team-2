@@ -161,12 +161,6 @@ form.form {
                 color: vars.$blue;
                 padding: 20px;
 
-                & :hover {
-                    background-color: vars.$blue;
-                    color: white;
-                    cursor: pointer;
-                }
-
                 & .list-created {
                     font-size: 20px;
                     padding: 20px;
@@ -186,6 +180,12 @@ form.form {
                     border: 1px solid vars.$green;
                     border-radius: 10px;
                     margin: 20px;
+
+                    &:hover {
+                        background-color: vars.$blue;
+                        color: white;
+                        cursor: pointer;
+                    }
 
                     & img {
                         width: 40px;
@@ -338,6 +338,11 @@ form.form {
     margin-top: 30px;
     margin-bottom: 20px;
     cursor: pointer;
+
+    &:hover {
+        background-color: vars.$blue;
+        cursor: pointer;
+    }
 }
 
 .profile-image {
