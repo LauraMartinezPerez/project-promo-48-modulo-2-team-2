@@ -238,42 +238,6 @@ form.form {
     gap: 5px;
     color: white;
 }
-@media (min-width: 768px) {
-    .forms-preview {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .forms {
-        width: 60%;
-        margin-top: 30px;
-    }
-
-    .preview {
-        width: 35%;
-    }
-}
-@media (min-width: 1024px) {
-    .forms-preview {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .forms {
-        width: 60%;
-        .forms-preview .forms {
-            margin-top: 30px;
-        }
-    }
-
-    .preview {
-        width: 35%;
-    }
-}
 
 .file {
     display: none;
@@ -333,6 +297,7 @@ form.form {
     }
 
     .forms {
+        max-width: 600px;
         width: 50%;
         margin-top: 30px;
     }
@@ -358,6 +323,7 @@ form.form {
     .forms {
         margin-top: 30px;
         width: 50%;
+        max-width: 600px;
     }
 
     .preview {
