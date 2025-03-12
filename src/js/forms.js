@@ -1,4 +1,4 @@
-console.log("ficheros forms");
+"use strict";
 
 const resetBtn = document.querySelector(".js-reset-btn");
 
@@ -127,16 +127,16 @@ inputsGenre.addEventListener("input", handleGenres);
 
 // BOTON CREAR LISTA
 
-const btnCreate = document.querySelector(".js-btn-create");
+ const btnCreate = document.querySelector(".js-btn-create");
 const linkCard = document.querySelector(".js-link-created");
-const socialMedia = document.querySelector(".js-social-media");
+ const socialMedia = document.querySelector(".js-social-media"); 
 
-/* const handleCreateList = (e) => {
+/*  const handleCreateList = (e) => {
     e.preventDefault();
     socialMedia.classList.remove("collapsed");
 };
 
-btnCreate.addEventListener("click", handleCreateList); */
+btnCreate.addEventListener("click", handleCreateList); */ 
 
 function handleCreateList(ev) {
     ev.preventDefault();
@@ -157,8 +157,6 @@ function handleCreateList(ev) {
 
     })
 };
-
-
 btnCreate.addEventListener("click", handleCreateList);
 
 // Boton Reset
