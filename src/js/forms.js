@@ -2,18 +2,6 @@ console.log("ficheros forms");
 
 const resetBtn = document.querySelector(".js-reset-btn");
 
-// Objeto para enviar info al servidor //
-const FormData = {
-    field1: 0,
-    field2: "",
-    field3: "",
-    field4: "",
-    field5: "",
-    field6: "",
-    field7: "",
-    photo: "",
-};
-
 // Constantes de Design & Complete //
 const userNamelist = document.querySelector(".js-name-forms");
 const userListName = document.querySelector(".js-list-name");
@@ -32,6 +20,20 @@ const firstMoviePreview = document.querySelector(".js-peli1");
 const secondMoviePreview = document.querySelector(".js-peli2");
 const thirdMoviePreview = document.querySelector(".js-peli3");
 const userPhotoPreview = document.querySelector(".js-user-photo");
+
+
+// Objeto para enviar info al servidor //
+const FormData = {
+    field1: 0,
+    field2:"",
+    field3:"",
+    field4:"",
+    field5:"",
+    field6:"",
+    photo: ""
+};
+
+
 
 // Función para pintar nombre de usuario y nombre de lista //
 
@@ -52,26 +54,29 @@ inputsFormDesign.addEventListener("input", handleForms);
 firstMovie.addEventListener("input", (event) => {
     event.preventDefault();
     if (event.target.value === "") {
-        firstMoviePreview.innerHTML = "1: peli 1";
+        firstMoviePreview.innerHTML = "1: peli 1";        
     } else {
         firstMoviePreview.innerHTML = event.target.value;
+        FormData.field4 = event.target.value;
     }
 });
 
 secondMovie.addEventListener("input", (event) => {
     event.preventDefault();
     if (event.target.value === "") {
-        secondMoviePreview.innerHTML = "2: peli 2";
+        secondMoviePreview.innerHTML = "2: peli 2";        
     } else {
         secondMoviePreview.innerHTML = event.target.value;
+        FormData.field5 = event.target.value;
     }
 });
 
 thirdMovie.addEventListener("input", (event) => {
     if (event.target.value === "") {
-        thirdMoviePreview.innerHTML = "3: peli 3";
+        thirdMoviePreview.innerHTML = "3: peli 3";        
     } else {
         thirdMoviePreview.innerHTML = event.target.value;
+        FormData.field6 = event.target.value;
     }
 });
 
@@ -86,6 +91,7 @@ const movieBackground = document.querySelector(".js-movie-background");
 
 const handleGenres = (event) => {
     const genreValue = parseInt(event.target.value);
+    FormData.field1 = event.target.value;
     if (genreValue === 1) {
         genrePreview.innerHTML = "Terror";
         movieBackground.classList.add("terrorbg");
