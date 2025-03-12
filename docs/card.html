@@ -1,47 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
     <title>Document</title>
-  <link rel="stylesheet" href="./assets/main-56dd2e25.css">
-</head>
+    <script
+      src="https://kit.fontawesome.com/4e18aa373e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/main-1de171c0.css">
+  </head>
 
-<body>
-
-        <div class="card-previw">
-
-            <div class="card_preview_title js-movie-image">
-                <p class="js-list-movies-title card_list_title">Mis pelis chulas</p>
-            </div>
-
-            <div class="card_genre">
-                <p>Género: 
-                    <span class="romance-category js-movie-category"></span>
-                </p>
-            </div>
-                
-            <div class="card_list_style">
-                <ul>
-                    <span class="list-background"><li class="js-peli1 list-background">1: peli 1</li> </span>
-                    <span class="list-background"></span><li class="js-peli2 list-background">2: peli 2</li> </span>
-                    <span class="list-background"></span><li class="js-peli3 list-background">3: peli 3</li> </span>
-                </ul>
-            </div>
+    <body>
         
-            <div class="card_user_name">
-                <p class="js-name-preview">Tu nombre</p>
-            </div>
+<header id= "header_containter" class="header_container">
+    <div class="header_icon">
+        <a href="/index.html">
+            <img class= "header_icon" src="./images/logo.svg">
+        </a>
+    </div>
+    <div class="header_texts"><h1 class="header_title">PELISCHULAS</h1><h2 class="subtitle"></h2>
+    </header>
 
-            <div class= "js-user-photo">
-                <img class="avatar-photo js__profile-preview" src="./images/mujerprogramadora.png" alt="logo">
-            </div>
 
-        </div> 
+        <main>
+            <div class="preview">
+                
+
+<div class="fondo-de-pelicula js-movie-background">
+    <div class="card-previw">
+        <div class="card_preview_title js-movie-image">
+            <p class="js-list-movies-title card_list_title">Mis pelis chulas</p>
+        </div>
+
+        <div class="card_genre">
+            <p>Género: 
+                <span class="romance-category js-movie-category"></span>
+            </p>
+        </div>
+            
+        <div class="card_list_style">
+            <ul>
+                <span class="list-background"><li class="js-peli1 list-background">1: peli 1</li> </span>
+                <span class="list-background"></span><li class="js-peli2 list-background">2: peli 2</li> </span>
+                <span class="list-background"></span><li class="js-peli3 list-background">3: peli 3</li> </span>
+            </ul>
+        </div>
     
-</body>
+        <div class="card_user_name">
+            <p class="js-name-preview">Tu nombre</p>
+        </div>
 
+        <div>
+            <img class="avatar-photo js__profile-preview js-user-photo" src="./images/user.png" alt="logo">
+        </div>
+    </div>
+</div> 
+
+            </div>
+        </main>
+        <section class="footer-container">
+        <p class="footer-left">
+            <span class="copyright">&copy;</span> 
+            <span class="year">2025</span> </p>
+        <p class="footer-middle">Nuestro sitio Web de pelis chulas</p>
+    <div>
+        <img class="footer-icon" src="./images/logo.svg" alt="logoClaqueta">
+    </div>
+</section>
+
+
+    
+
+        <script src="./js/main.js"></script>
+    </body>
 </html>

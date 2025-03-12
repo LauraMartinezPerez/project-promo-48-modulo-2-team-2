@@ -1,46 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="stylesheet" href="scss/main.scss" />
     <title>Document</title>
-</head>
+    <script
+      src="https://kit.fontawesome.com/4e18aa373e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-
-        <div class="card-previw">
-
-            <div class="card_preview_title js-movie-image">
-                <p class="js-list-movies-title card_list_title">Mis pelis chulas</p>
+    <body>
+        <load src="./partials/header.html" />
+        <main>
+            <div class="preview">
+                <load src="./partials/preview.html" />
             </div>
-
-            <div class="card_genre">
-                <p>Género: 
-                    <span class="romance-category js-movie-category"></span>
-                </p>
-            </div>
-                
-            <div class="card_list_style">
-                <ul>
-                    <span class="list-background"><li class="js-peli1 list-background">1: peli 1</li> </span>
-                    <span class="list-background"></span><li class="js-peli2 list-background">2: peli 2</li> </span>
-                    <span class="list-background"></span><li class="js-peli3 list-background">3: peli 3</li> </span>
-                </ul>
-            </div>
-        
-            <div class="card_user_name">
-                <p class="js-name-preview">Tu nombre</p>
-            </div>
-
-            <div class= "js-user-photo">
-                <img class="avatar-photo js__profile-preview" src="/images/mujerprogramadora.png" alt="logo">
-            </div>
-
-        </div> 
-    
-</body>
-
+        </main>
+        <load src="./partials/footer.html" />
+        <script src="./js/main.js"></script>
+    </body>
 </html>
