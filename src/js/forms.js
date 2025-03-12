@@ -54,29 +54,29 @@ inputsFormDesign.addEventListener("input", handleForms);
 firstMovie.addEventListener("input", (event) => {
     event.preventDefault();
     if (event.target.value === "") {
-        firstMoviePreview.innerHTML = "1: peli 1";
-        FormData.field4 = event.target.value;
+        firstMoviePreview.innerHTML = "1: peli 1";        
     } else {
         firstMoviePreview.innerHTML = event.target.value;
+        FormData.field4 = event.target.value;
     }
 });
 
 secondMovie.addEventListener("input", (event) => {
     event.preventDefault();
     if (event.target.value === "") {
-        secondMoviePreview.innerHTML = "2: peli 2";
-        FormData.field5 = event.target.value;
+        secondMoviePreview.innerHTML = "2: peli 2";        
     } else {
         secondMoviePreview.innerHTML = event.target.value;
+        FormData.field5 = event.target.value;
     }
 });
 
 thirdMovie.addEventListener("input", (event) => {
     if (event.target.value === "") {
-        thirdMoviePreview.innerHTML = "3: peli 3";
-        FormData.field6 = event.target.value;
+        thirdMoviePreview.innerHTML = "3: peli 3";        
     } else {
         thirdMoviePreview.innerHTML = event.target.value;
+        FormData.field6 = event.target.value;
     }
 });
 
