@@ -23,6 +23,8 @@ const userPhotoPreview = document.querySelector(".js-user-photo");
 
 
 // Objeto para enviar info al servidor //
+
+
 const FormData = {
     field1: 0,
     field2:"",
@@ -38,7 +40,8 @@ const FormData = {
 // Función para pintar nombre de usuario y nombre de lista //
 
 const inputsFormDesign = document.querySelector(".js-forms-design");
-const handleForms = (event) => {
+inputsFormDesign.addEventListener("input", (event) => {
+    event.preventDefault();
     if (event.target.id === "name") {
         namePreview.innerHTML = event.target.value;
         FormData.field2 = event.target.value;
@@ -46,8 +49,18 @@ const handleForms = (event) => {
         listTitle.innerHTML = event.target.value;
         FormData.field3 = event.target.value;
     }
-};
-inputsFormDesign.addEventListener("input", handleForms);
+})
+/* ------SE PUEDE BORRAR------
+ const handleForms = (event) => {
+    if (event.target.id === "name") {
+        namePreview.innerHTML = event.target.value;
+        FormData.field2 = event.target.value;
+    } else if (event.target.id === "list") {
+        listTitle.innerHTML = event.target.value;
+        FormData.field3 = event.target.value;
+    }
+}; 
+ inputsFormDesign.addEventListener("input", handleForms);  */
 
 // Función para pintar los títulos de las pelis //
 
@@ -115,12 +128,36 @@ inputsGenre.addEventListener("input", handleGenres);
 // BOTON CREAR LISTA
 
 const btnCreate = document.querySelector(".js-btn-create");
+const linkCard = document.querySelector(".js-link-created");
 const socialMedia = document.querySelector(".js-social-media");
 
-const handleCreateList = (e) => {
+/* const handleCreateList = (e) => {
     e.preventDefault();
     socialMedia.classList.remove("collapsed");
 };
+
+btnCreate.addEventListener("click", handleCreateList); */
+
+function handleCreateList(ev) {
+    ev.preventDefault();
+    socialMedia.classList.remove("collapsed");
+    fetch("https://dev.adalab.es/api/info/data", {
+        method: "POST",
+        body: JSON.stringify(FormData),
+        headers: {"Content-type": "application/json",},
+    })
+    .then(response => response.json())
+    .then((data) => {
+        
+         const idCard = data.infoID;
+         
+        linkCard.classList.remove("hidden");
+        linkCard.href = `./card.html?id=${idCard}` 
+        
+
+    })
+};
+
 
 btnCreate.addEventListener("click", handleCreateList);
 

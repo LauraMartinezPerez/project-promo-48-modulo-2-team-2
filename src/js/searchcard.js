@@ -1,6 +1,6 @@
 "use strict";
 
-const createCardBtn = document.querySelector(".js-btn-create");
+/* const createCardBtn = document.querySelector(".js-btn-create");
 const linkCard = document.querySelector (".js-link-created");
 
 function handleCreateCard (ev) {
@@ -22,4 +22,5 @@ function handleCreateCard (ev) {
 }
 
 createCardBtn.addEventListener("click", handleCreateCard);
+ */
 
