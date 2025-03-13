@@ -1,25 +1,23 @@
 "use strict";
 
 const createCardBtn = document.querySelector(".js-btn-create");
-const linkCard = document.querySelector (".js-link-created");
+const linkCard = document.querySelector(".js-link-created");
 
-function handleCreateCard (ev) {
+function handleCreateCard(ev) {
     ev.preventDefault();
-    
+
     fetch("https://dev.adalab.es/api/info/data", {
-        method:"POST",
+        method: "POST",
         body: JSON.stringify(FormData),
-        headers: {"Content-type": "application/json"}       
+        headers: { "Content-type": "application/json" },
     })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
             const idCard = data.infoID;
             linkCard.classList.remove("hidden");
-            linkCard.href = `./card.html?id=${idCard}`
-            
-        })
+            linkCard.href = `./card.html?id=${idCard}`;
+        });
 }
 
 createCardBtn.addEventListener("click", handleCreateCard);
-

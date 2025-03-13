@@ -13,7 +13,7 @@
       src="https://kit.fontawesome.com/4e18aa373e.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./assets/main-c9cbde72.css">
+    <link rel="stylesheet" href="./assets/main-1de171c0.css">
   </head>
 
     <body>
@@ -29,11 +29,12 @@
 
 
         <main>
+          <div class="forms-preview">
             <div class="forms">
-                <form class="form" action="https://dev.adalab.es/api/form" method="POST">
+              <form class="form" action="https://dev.adalab.es/api/form" method="POST">
 
     <section class="design">
-    <div class="design js-design-title">
+    <div class="design js-design-title js-design-header">
         <h2>Diseña</h2>
         <span class="dropdown"><i class="fa-solid fa-caret-down"></i></span>
     </div>
@@ -52,7 +53,7 @@
             class="file js-photo-forms js__profile-upload-btn"
             type="file"
             id="photo"/>
-            <div><img class="profile-image js__profile-image"></div></div>
+            <div><img class="profile-image js__profile-image" src="./images/user.png"></div></div>
 
         <label for="list">Título de la lista</label>
         <input
@@ -66,39 +67,49 @@
 </section>
 
     <section class="fill">
-  <div class="fill js-fill-title">
+  <div class="fill js-fill-title js-design-header">
     <h2>Rellena</h2>
     <span class="dropdown"><i class="fa-solid fa-caret-down"></i></span>
   </div>
 
   <div class="collapsed js-fill-form form_fill_content">
+
     <fieldset class="fill js-title-names">
-      <fieldset class="genre js-genre">
+    
+      <fieldset class="fieldset-genre js-genre">
           <legend class="bold">Género de tu lista de pelis</legend>
 
+          <div class="images-order">
+
         <div class="forms_image_selector">
-          <img class= "hero-img-scifi" src="./images/terror.jpg" alt="imagen de cartel  de terror">
+          <img class= "img-complete" src="./images/terror.jpg" alt="imagen de cartel  de terror">
           <div class="forms_check_title">
-          <input class = "js-terror-movie" value="1" type="radio" name="genre" />
-          <label for="terror">Terror</label></div>
+            <input class = "js-terror-movie" value="1" type="radio" name="genre" />
+            <label for="terror">Terror</label>
+          </div>
         </div>
+
 
           <div class="forms_image_selector">
-          <img class="hero-img-scifi" src="./images/ciencia-ficcion.jpg" alt="imagen de cartel de ciencia ficcion">        
-          <div class="forms_check_title">
+            <img class="img-complete" src="./images/ciencia-ficcion.jpg" alt="imagen de cartel de ciencia ficcion">
+            <div class="forms_check_title">   
           <input class = "js-fiction-movie" value="2" type="radio" name="genre" />
-          <label for="fiction">Ciencia ficción</label></div>
+          <label for="fiction">Ciencia ficción</label>
         </div>
+      </div>
 
-        <div class="forms_image_selector">
-          <img class="hero-img-romance" src="./images/romance.jpg">
+
+         <div class="forms_image_selector">
+          <div class= "forms-single-img"><img class="img-complete" src="./images/romance.jpg">
+
           <div class="forms_check_title">
           <input class= "js-romantic-movie" value="3" type="radio" name="genre" />
-          <label for="romantic">Romántica</label>
+          <label for="romance">Romance</label></div></div>
         </div>
-        </div>
-
+      </div>
       </fieldset>
+
+
       <fieldset class="titles js-complete-titles">
         <legend class="bold">Escribe los títulos</legend>
         <label for="peli1">Primera peli</label>
@@ -113,16 +124,26 @@
 </section>
 
     <section class="share">
-    <div class="share js-share-title">
+    <div class="share js-share-title js-design-header">
         <h2>Comparte</h2>
         <span class="dropdown"><i class="fa-solid fa-caret-down"></i></span>
     </div>
     <div class="collapsed share-container js-share-form">
-    <fieldset class="share">
-        <button class="button">Crear lista</button>
-
-    </fieldset>
-</div>
+        <fieldset class="share">
+            <button class="button-create js-btn-create">Crear lista</button>
+            <div class="social-media collapsed js-social-media">
+                <h4 class="list-created">¡Tu lista ha sido creada!</h4>
+                <a class="link-created js-link-created" href="./card.html">Click</a>
+                <div class="whatsapp">
+                    <img
+                        src="./images/icon-whatsapp.svg"
+                        alt="Icono de Whatsapp"
+                    />
+                    <p>Compartir en Whatsapp</p>
+                </div>
+            </div>
+        </fieldset>
+    </div>
 </section>
 
 
@@ -133,39 +154,40 @@
 
             </div>
             <div class="preview">
-                
+              
 
-    <div class="fondo-de-pelicula">
-        <div class="card-previw">
-            <div class="card_preview_title js-movie-image">
-                <p class="js-list-movies-title card_list_title">Mis pelis chulas</p>
-            </div>
-
-            <div class="card_genre">
-                <p>Género: 
-                    <span class="romance-category js-movie-category"></span>
-                </p>
-            </div>
-                
-            <div class="card_list_style">
-                <ul>
-                    <span class="list-background"><li class="js-peli1 list-background">1: peli 1</li> </span>
-                    <span class="list-background"></span><li class="js-peli2 list-background">2: peli 2</li> </span>
-                    <span class="list-background"></span><li class="js-peli3 list-background">3: peli 3</li> </span>
-                </ul>
-            </div>
-        
-            <div class="card_user_name">
-                <p class="js-name-preview">Tu nombre</p>
-            </div>
-
-            <div class= "js-user-photo">
-                <img class="avatar-photo js__profile-preview" src="./images/mujerprogramadora.png" alt="logo">
-            </div>
+<div class="fondo-de-pelicula js-movie-background">
+    <div class="card-previw">
+        <div class="card_preview_title js-movie-image">
+            <p class="js-list-movies-title card_list_title">Mis pelis chulas</p>
         </div>
-    </div> 
+
+        <div class="card_genre">
+            <p>Género: 
+                <span class="romance-category js-movie-category"></span>
+            </p>
+        </div>
+            
+        <div class="card_list_style">
+            <ul>
+                <span class="list-background"><li class="js-peli1 list-background">1: peli 1</li> </span>
+                <span class="list-background"></span><li class="js-peli2 list-background">2: peli 2</li> </span>
+                <span class="list-background"></span><li class="js-peli3 list-background">3: peli 3</li> </span>
+            </ul>
+        </div>
+    
+        <div class="card_user_name">
+            <p class="js-name-preview">Tu nombre</p>
+        </div>
+
+        <div>
+            <img class="avatar-photo js__profile-preview js-user-photo" src="./images/user.png" alt="logo">
+        </div>
+    </div>
+</div> 
 
             </div>
+          </div>
         </main>
         <section class="footer-container">
         <p class="footer-left">
