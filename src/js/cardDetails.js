@@ -13,7 +13,7 @@ const genreCard = document.querySelector(".js-movie-category");
 const movieOneCard = document.querySelector(".js-peli1");
 const movieTwoCard = document.querySelector(".js-peli2");
 const movieThreeCard = document.querySelector(".js-peli3");
-
+const userPhotoCard = document.querySelector(".js-user-photo");
 
 //Para coger la info de la url de una pagina:
 
@@ -33,5 +33,7 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
     movieOneCard.innerHTML = targetData.field4
     movieTwoCard.innerHTML = targetData.field5
     movieThreeCard.innerHTML = targetData.field6
+    userPhotoCard.innerHTML = targetData.photo
+
    
 })

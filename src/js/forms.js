@@ -1,4 +1,4 @@
-console.log("ficheros forms");
+'use strict';
 
 const resetBtn = document.querySelector(".js-reset-btn");
 
@@ -24,7 +24,7 @@ const userPhotoPreview = document.querySelector(".js-user-photo");
 
 // Objeto para enviar info al servidor //
 const FormData = {
-    field1: 0,
+    field1:"",
     field2:"",
     field3:"",
     field4:"",
@@ -111,6 +111,8 @@ const handleGenres = (event) => {
 };
 
 inputsGenre.addEventListener("input", handleGenres);
+
+
 
 // BOTON CREAR LISTA
 

@@ -13,7 +13,6 @@ function handleCreateCard(ev) {
     })
         .then((response) => response.json())
         .then((data) => {
-            console.log(data);
             const idCard = data.infoID;
             linkCard.classList.remove("hidden");
             linkCard.href = `./card.html?id=${idCard}`;
