@@ -2,7 +2,8 @@
 
 .card_preview_title {
     width: 75%;
-    background-color: vars.$blue;
+    // background-color: vars.$blue;
+    text-transform: uppercase;
     padding: 10px;
     justify-content: center;
     text-align: center;
@@ -12,9 +13,10 @@
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: vars.$blue;
+// background-color: vars.$blue;
+text-decoration: underline;
 font-family: vars.$font-main;
-color: vars.$green;
+color: white;
 padding: 10px;
 margin-bottom: 10px;
 }
@@ -38,7 +40,7 @@ margin-bottom: 10px;
     display: inline-block;
     text-align: center;
     line-height: 20px;
-    background-color: vars.$blue;
+    // background-color: vars.$blue;
 }
 
 .card-title {
@@ -78,11 +80,10 @@ margin-bottom: 10px;
     flex-direction: column;
     align-items: center;
     margin: 40px;
-    background-color: vars.$blue;
+    background-color: rgba(0, 0, 0, 0.6);
     background-size: 30px 30px;
     border-radius: 10px;
     box-shadow: 1px 5px 5px 5px rgba(0, 0, 0, 0.3);
-   
 }
 
 .img-category {
@@ -115,7 +116,7 @@ div.img-category img {
 }
 
 .list-background {
-    background-color: #264653;
+    // background-color: #264653;
     display: flex;  
     flex-direction: column;
     justify-content: center;
@@ -186,7 +187,7 @@ button.reset-btn {
     margin-bottom: 50px;
 
     &:hover {
-        background-color: vars.$blue;
+        background-color: red;
         cursor: pointer;
     }
 }

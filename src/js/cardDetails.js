@@ -33,7 +33,5 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
     movieOneCard.innerHTML = targetData.field4
     movieTwoCard.innerHTML = targetData.field5
     movieThreeCard.innerHTML = targetData.field6
-    userPhotoCard.innerHTML = targetData.photo
-
-   
+    userPhotoCard.src = targetData.photo
 })

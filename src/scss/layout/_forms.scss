@@ -10,8 +10,8 @@ form.form {
     flex-wrap: wrap;
 
     & span.dropdown {
-        color: vars.$green;
-        background-color: vars.$white;
+        color: vars.$yellow;
+        background-color: white;
         border-radius: 50%;
         width: 25px;
         height: 25px;
@@ -35,6 +35,11 @@ form.form {
             border: 2.5px solid vars.$blue;
             border-radius: 20px;
             padding: 10px 20px;
+
+            &:hover {
+                background-color: vars.$blue;
+                color: white;
+            }
         }
 
         & fieldset.design {
@@ -69,6 +74,11 @@ form.form {
             border-radius: 20px;
             padding: 10px 20px;
             flex-wrap: wrap;
+
+            &:hover {
+                background-color: vars.$blue;
+                color: white;
+            }
         }
 
         & fieldset.fill {
@@ -122,6 +132,11 @@ form.form {
             border: 2.5px solid vars.$blue;
             border-radius: 20px;
             padding: 10px 20px;
+
+            &:hover {
+                background-color: vars.$blue;
+                color: white;
+            }
         }
 
         & fieldset.share {
@@ -167,7 +182,7 @@ form.form {
                 }
 
                 & .link-created {
-                    font-size: 15px;
+                    font-size: 35px;
                     color: palevioletred;
                 }
 
@@ -175,7 +190,31 @@ form.form {
                     display: flex;
                     font-size: 19px;
                     text-align: center;
-                    justify-content: space-evenly;
+                    justify-content: space-between;
+                    padding: 0 5px ;
+                    align-items: center;
+                    border: 1px solid vars.$green;
+                    border-radius: 10px;
+                    margin: 20px;
+
+                    &:hover {
+                        background-color: vars.$blue;
+                        color: white;
+                        cursor: pointer;
+                    }
+
+                    & img {
+                        width: 40px;
+                    }
+                }
+
+                & .twitter {
+                    display: flex;
+                    font-size: 19px;
+                    text-align: center;
+                    justify-content: start;
+                    gap: 5px;
+                    padding: 0 5px ;
                     align-items: center;
                     border: 1px solid vars.$green;
                     border-radius: 10px;
