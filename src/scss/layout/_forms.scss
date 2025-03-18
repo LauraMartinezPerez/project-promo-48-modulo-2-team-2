@@ -167,7 +167,7 @@ form.form {
                 }
 
                 & .link-created {
-                    font-size: 15px;
+                    font-size: 35px;
                     color: palevioletred;
                 }
 
@@ -175,7 +175,31 @@ form.form {
                     display: flex;
                     font-size: 19px;
                     text-align: center;
-                    justify-content: space-evenly;
+                    justify-content: space-between;
+                    padding: 0 5px ;
+                    align-items: center;
+                    border: 1px solid vars.$green;
+                    border-radius: 10px;
+                    margin: 20px;
+
+                    &:hover {
+                        background-color: vars.$blue;
+                        color: white;
+                        cursor: pointer;
+                    }
+
+                    & img {
+                        width: 40px;
+                    }
+                }
+
+                & .twitter {
+                    display: flex;
+                    font-size: 19px;
+                    text-align: center;
+                    justify-content: start;
+                    gap: 5px;
+                    padding: 0 5px ;
                     align-items: center;
                     border: 1px solid vars.$green;
                     border-radius: 10px;

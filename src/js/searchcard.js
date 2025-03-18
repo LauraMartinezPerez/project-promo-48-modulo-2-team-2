@@ -2,6 +2,7 @@
 
 const createCardBtn = document.querySelector(".js-btn-create");
 const linkCard = document.querySelector(".js-link-created");
+const linkWhatsapp = document.querySelector(".js-link-whatsapp");
 
 function handleCreateCard(ev) {
     ev.preventDefault();
@@ -17,6 +18,7 @@ function handleCreateCard(ev) {
             const idCard = data.infoID;
             linkCard.classList.remove("hidden");
             linkCard.href = `./card.html?id=${idCard}`;
+            linkWhatsapp.href += encodeURI(linkCard.href);
         });
 }
 
