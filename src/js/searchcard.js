@@ -9,7 +9,7 @@ function handleCreateCard(ev) {
 //endpoint de tipo POST
     fetch("https://dev.adalab.es/api/info/data", {
         method: "POST", // si quiero que sea POST, es obligatorio, por default es GET
-        body: JSON.stringify(formData), // Los datos que quiero recogger
+        body: JSON.stringify(FormData), // Los datos que quiero recogger
         headers: { "Content-type": "application/json" },
     })
         .then((response) => response.json())
