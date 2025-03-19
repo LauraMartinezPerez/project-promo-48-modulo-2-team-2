@@ -8,6 +8,7 @@
 */
 
 const titleCard = document.querySelector(".js-list-movies-title");
+const cardBackground = document.querySelector('.js-movie-background');
 const nameCard = document.querySelector(".js-name-preview");
 const genreCard = document.querySelector(".js-movie-category");
 const movieOneCard = document.querySelector(".js-peli1");
@@ -27,6 +28,17 @@ const getGenre = (genreId) => {
     }
 }
 
+const getBackground = (genreId) => {
+    switch(genreId) {
+        case 1:
+            return 'terrorbg'
+        case 2:
+            return 'fictionbg'
+        case 3: 
+            return 'romancebg'
+    }
+}
+
 //Para coger la info de la url de una pagina:
 
 //me creo una variable:
@@ -42,6 +54,7 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
     titleCard.innerHTML = targetData.field3
     nameCard.innerHTML = targetData.field2
     genreCard.innerHTML = getGenre(targetData.field1)
+    cardBackground.classList.add(getBackground(targetData.field1));
     movieOneCard.innerHTML = targetData.field4
     movieTwoCard.innerHTML = targetData.field5
     movieThreeCard.innerHTML = targetData.field6
