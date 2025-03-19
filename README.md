@@ -19,10 +19,10 @@ Te permite recomendar tres películas del género que desees (terror, ciencia fi
 ### Cómo usarlo:
 
 1. **Clona este repositorio.**
-2. Abre el archivo **index.html** en tu navegador.
-    - No recomendamos que clones este repo ya que no podrás añadir commits.
-3. Puedes crear tu lista de pelischulas.
-4. Puedes modoficar el código en **main.js** para agregar más funcionalidades.
+2. Abre la terminal y ejecuta: **npm install**
+3. Ejecuta **npm run dev** para levantar el entorno en tu navegador.
+4. Puedes crear tu lista de pelischulas.
+5. Puedes modificar el código en **main.js** para agregar más funcionalidades.
 
 ### Mejoras técnicas:
 
