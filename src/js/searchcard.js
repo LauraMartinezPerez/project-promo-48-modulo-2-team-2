@@ -16,7 +16,7 @@ function handleCreateCard (ev) {
         .then(response => response.json())
         .then(data => {
             const idCard = data.infoID;
-            linkCard.classList.remove("hidden");
+            linkCard.classList.remove("hidden")
             linkCard.href = `./card.html?id=${idCard}`
             linkWhatsapp.href += encodeURI(linkCard.href)
         })

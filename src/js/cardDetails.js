@@ -7,7 +7,7 @@
     - introduzco esos datos en el html de la tarjeta
 */
 
-/*const titleCard = document.querySelector(".js-list-movies-title");
+const titleCard = document.querySelector(".js-list-movies-title");
 const cardBackground = document.querySelector(".js-movie-background");
 const nameCard = document.querySelector(".js-name-preview");
 const genreCard = document.querySelector(".js-movie-category");
@@ -56,7 +56,7 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
         titleCard.innerHTML = targetData.field3;
         nameCard.innerHTML = targetData.field2;
         genreCard.innerHTML = getGenre(targetData.field1);
-        cardBackground.classList.add(getBackground(targetData.field1));
+        cardBackground.classList.add(getBackground(targetData.field1))
         movieOneCard.innerHTML = targetData.field4;
         movieTwoCard.innerHTML = targetData.field5;
         movieThreeCard.innerHTML = targetData.field6;
