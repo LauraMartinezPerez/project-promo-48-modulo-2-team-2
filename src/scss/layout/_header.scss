@@ -16,6 +16,11 @@
 
 .header_title {
   padding-right: 40px;
+  font-size: 50px;
+  font-weight: bold;
+  color: vars.$blue;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px white, 6px 6px 0px #333;
 }
 
 .header_icon {
@@ -28,11 +33,3 @@
     cursor: pointer;
 }
 }
-
-// .subtitle {
-//   font-family: "Inter", serif;
-//   color: white;
-//   font-size: 30px; 
-//   display: flex;
-// }
-
