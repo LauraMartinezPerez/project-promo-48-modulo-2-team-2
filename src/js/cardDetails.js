@@ -53,6 +53,6 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
         movieTwoCard.innerHTML = targetData.field5;
         movieThreeCard.innerHTML = targetData.field6;
         userPhotoCard.src = targetData.photo;
-
+        localStorage.setItem("targetData", JSON.stringify(targetData));
     })
-    localStorage.setItem(targetData, "targetData")
+    .catch(error => console.error("Error en la petición:", error));
