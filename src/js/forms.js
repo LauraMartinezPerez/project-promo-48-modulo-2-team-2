@@ -23,7 +23,7 @@ const userPhotoPreview = document.querySelector(".js-user-photo");
 
 
 // Objeto para enviar info al servidor //
-const FormData = {
+const formData = {
     field1:"",
     field2:"",
     field3:"",
@@ -41,10 +41,10 @@ const inputsFormDesign = document.querySelector(".js-forms-design");
 const handleForms = (event) => {
     if (event.target.id === "name") {
         namePreview.innerHTML = event.target.value;
-        FormData.field2 = event.target.value;
+        formData.field2 = event.target.value;
     } else if (event.target.id === "list") {
         listTitle.innerHTML = event.target.value;
-        FormData.field3 = event.target.value;
+        formData.field3 = event.target.value;
     }
 };
 inputsFormDesign.addEventListener("input", handleForms);
@@ -57,7 +57,7 @@ firstMovie.addEventListener("input", (event) => {
         firstMoviePreview.innerHTML = "1: peli 1";        
     } else {
         firstMoviePreview.innerHTML = event.target.value;
-        FormData.field4 = event.target.value;
+        formData.field4 = event.target.value;
     }
 });
 
@@ -67,7 +67,7 @@ secondMovie.addEventListener("input", (event) => {
         secondMoviePreview.innerHTML = "2: peli 2";        
     } else {
         secondMoviePreview.innerHTML = event.target.value;
-        FormData.field5 = event.target.value;
+        formData.field5 = event.target.value;
     }
 });
 
@@ -76,7 +76,7 @@ thirdMovie.addEventListener("input", (event) => {
         thirdMoviePreview.innerHTML = "3: peli 3";        
     } else {
         thirdMoviePreview.innerHTML = event.target.value;
-        FormData.field6 = event.target.value;
+        formData.field6 = event.target.value;
     }
 });
 
@@ -91,7 +91,7 @@ const movieBackground = document.querySelector(".js-movie-background");
 
 const handleGenres = (event) => {
     const genreValue = parseInt(event.target.value);
-    FormData.field1 = event.target.value;
+    formData.field1 = event.target.value;
     if (genreValue === 1) {
         genrePreview.innerHTML = "Terror";
         movieBackground.classList.add("terrorbg");

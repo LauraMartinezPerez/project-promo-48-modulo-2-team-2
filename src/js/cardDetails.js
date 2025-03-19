@@ -7,7 +7,8 @@
     - introduzco esos datos en el html de la tarjeta
 */
 
-const titleCard = document.querySelector(".js-list-movies-title");
+/*const titleCard = document.querySelector(".js-list-movies-title");
+const cardBackground = document.querySelector(".js-movie-background");
 const nameCard = document.querySelector(".js-name-preview");
 const genreCard = document.querySelector(".js-movie-category");
 const movieOneCard = document.querySelector(".js-peli1");
@@ -15,25 +16,49 @@ const movieTwoCard = document.querySelector(".js-peli2");
 const movieThreeCard = document.querySelector(".js-peli3");
 const userPhotoCard = document.querySelector(".js-user-photo");
 
+//Para pintar el genero correctamente en la card.
+const getGenre = (genreId) => {
+    switch (genreId) {
+        case 1:
+            return "Terror";
+        case 2:
+            return "Ficción";
+        case 3:
+            return "Romance";
+    }
+};
+
+const getBackground = (genreId) => {
+    switch (genreId) {
+        case 1:
+            return "terrorbg";
+        case 2:
+            return "fictionbg";
+        case 3:
+            return "romancebg";
+    }
+};
+
 //Para coger la info de la url de una pagina:
 
 //me creo una variable:
- const ulrParam = new URLSearchParams(window.location.search);
- //ahora me cojo el id:
- const id = ulrParam.get("id");
+const ulrParam = new URLSearchParams(window.location.search);
+//ahora me cojo el id:
+const id = ulrParam.get("id");
 
-fetch(`https://dev.adalab.es/api/info/${id}`)
-.then(response => response.json())
-.then((data) => {
-    
-    const targetData = data.data;
-    console.log(data.data);
-    titleCard.innerHTML = targetData.field3
-    nameCard.innerHTML = targetData.field2
-    genreCard.innerHTML = targetData.field1
-    movieOneCard.innerHTML = targetData.field4
-    movieTwoCard.innerHTML = targetData.field5
-    movieThreeCard.innerHTML = targetData.field6
-    userPhotoCard.innerHTML = targetData.photo
-    localStorage.setItem("targetData", JSON.stringify(targetData));
-})
+fetch(`https://dev.adalab.es/api/info/${idCard}`)
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data);
+        const targetData = data.data;
+        titleCard.innerHTML = targetData.field3;
+        nameCard.innerHTML = targetData.field2;
+        genreCard.innerHTML = getGenre(targetData.field1);
+        cardBackground.classList.add(getBackground(targetData.field1));
+        movieOneCard.innerHTML = targetData.field4;
+        movieTwoCard.innerHTML = targetData.field5;
+        movieThreeCard.innerHTML = targetData.field6;
+        userPhotoCard.src = targetData.photo;
+        localStorage.setItem("targetData", JSON.stringify(targetData));
+    });
+*/

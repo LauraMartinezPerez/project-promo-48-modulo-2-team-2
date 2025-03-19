@@ -32,7 +32,7 @@ function writeImage() {
      * podemos pasarlo como background a la imagen de perfil y a la vista previa
      * de nuestro componente.
      */
-    FormData.photo = fr.result;
+    formData.photo = fr.result;
     profileImage.src = fr.result;
     profilePreview.src = fr.result;
 
