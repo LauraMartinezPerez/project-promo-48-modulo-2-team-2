@@ -25,8 +25,9 @@ const userPhotoCard = document.querySelector(".js-user-photo");
 fetch(`https://dev.adalab.es/api/info/${id}`)
 .then(response => response.json())
 .then((data) => {
-    console.log(data);
+    
     const targetData = data.data;
+    console.log(data.data);
     titleCard.innerHTML = targetData.field3
     nameCard.innerHTML = targetData.field2
     genreCard.innerHTML = targetData.field1
