@@ -15,6 +15,18 @@ const movieTwoCard = document.querySelector(".js-peli2");
 const movieThreeCard = document.querySelector(".js-peli3");
 const userPhotoCard = document.querySelector(".js-user-photo");
 
+//Para pintar el genero correctamente en la card.
+const getGenre = (genreId) => {
+    switch(genreId) {
+        case 1:
+            return 'Terror'
+        case 2:
+            return 'Ficción'
+        case 3: 
+            return 'Romance'
+    }
+}
+
 //Para coger la info de la url de una pagina:
 
 //me creo una variable:
@@ -29,7 +41,7 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
     const targetData = data.data;
     titleCard.innerHTML = targetData.field3
     nameCard.innerHTML = targetData.field2
-    genreCard.innerHTML = targetData.field1
+    genreCard.innerHTML = getGenre(targetData.field1)
     movieOneCard.innerHTML = targetData.field4
     movieTwoCard.innerHTML = targetData.field5
     movieThreeCard.innerHTML = targetData.field6
