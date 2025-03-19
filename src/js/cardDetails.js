@@ -45,10 +45,7 @@ const getBackground = (genreId) => {
 fetch(`https://dev.adalab.es/api/info/${id}`)
     .then(response => response.json())
     .then(data => {
-<<<<<<< HEAD
         console.log(data);
-=======
->>>>>>> c10130e94ae9094bdbd358b75dee6488991b9584
         const targetData = data.data;
         titleCard.innerHTML = targetData.field3;
         nameCard.innerHTML = targetData.field2;
@@ -58,11 +55,5 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
         movieTwoCard.innerHTML = targetData.field5;
         movieThreeCard.innerHTML = targetData.field6;
         userPhotoCard.src = targetData.photo;
-<<<<<<< HEAD
-        localStorage.setItem(targetData, "targetData")
-    })
-=======
         localStorage.setItem("targetData", JSON.stringify(targetData));
     })
-    .catch(error => console.error("Error en la petición:", error));
->>>>>>> c10130e94ae9094bdbd358b75dee6488991b9584
