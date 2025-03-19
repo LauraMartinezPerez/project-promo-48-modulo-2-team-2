@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const resetBtn = document.querySelector(".js-reset-btn");
 
@@ -21,19 +21,16 @@ const secondMoviePreview = document.querySelector(".js-peli2");
 const thirdMoviePreview = document.querySelector(".js-peli3");
 const userPhotoPreview = document.querySelector(".js-user-photo");
 
-
 // Objeto para enviar info al servidor //
 const formData = {
-    field1:"",
-    field2:"",
-    field3:"",
-    field4:"",
-    field5:"",
-    field6:"",
-    photo: ""
+    field1: "",
+    field2: "",
+    field3: "",
+    field4: "",
+    field5: "",
+    field6: "",
+    photo: "",
 };
-
-
 
 // Función para pintar nombre de usuario y nombre de lista //
 
@@ -54,7 +51,7 @@ inputsFormDesign.addEventListener("input", handleForms);
 firstMovie.addEventListener("input", (event) => {
     event.preventDefault();
     if (event.target.value === "") {
-        firstMoviePreview.innerHTML = "1: peli 1";        
+        firstMoviePreview.innerHTML = "1: peli 1";
     } else {
         firstMoviePreview.innerHTML = event.target.value;
         formData.field4 = event.target.value;
@@ -64,7 +61,7 @@ firstMovie.addEventListener("input", (event) => {
 secondMovie.addEventListener("input", (event) => {
     event.preventDefault();
     if (event.target.value === "") {
-        secondMoviePreview.innerHTML = "2: peli 2";        
+        secondMoviePreview.innerHTML = "2: peli 2";
     } else {
         secondMoviePreview.innerHTML = event.target.value;
         formData.field5 = event.target.value;
@@ -73,7 +70,7 @@ secondMovie.addEventListener("input", (event) => {
 
 thirdMovie.addEventListener("input", (event) => {
     if (event.target.value === "") {
-        thirdMoviePreview.innerHTML = "3: peli 3";        
+        thirdMoviePreview.innerHTML = "3: peli 3";
     } else {
         thirdMoviePreview.innerHTML = event.target.value;
         formData.field6 = event.target.value;
@@ -112,19 +109,17 @@ const handleGenres = (event) => {
 
 inputsGenre.addEventListener("input", handleGenres);
 
-
-
 // BOTON CREAR LISTA
 
-const btnCreate = document.querySelector(".js-btn-create");
-const socialMedia = document.querySelector(".js-social-media");
+// const btnCreate = document.querySelector(".js-btn-create");
+// const socialMedia = document.querySelector(".js-social-media");
 
-const handleCreateList = (e) => {
-    e.preventDefault();
-    socialMedia.classList.remove("collapsed");
-};
+// const handleCreateList = (e) => {
+//     e.preventDefault();
+//     socialMedia.classList.remove("collapsed");
+// };
 
-btnCreate.addEventListener("click", handleCreateList);
+// btnCreate.addEventListener("click", handleCreateList);
 
 // Boton Reset
 

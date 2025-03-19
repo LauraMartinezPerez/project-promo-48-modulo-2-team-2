@@ -7,7 +7,7 @@
     - introduzco esos datos en el html de la tarjeta
 */
 
-/*const titleCard = document.querySelector(".js-list-movies-title");
+const titleCard = document.querySelector(".js-list-movies-title");
 const cardBackground = document.querySelector(".js-movie-background");
 const nameCard = document.querySelector(".js-name-preview");
 const genreCard = document.querySelector(".js-movie-category");
@@ -44,7 +44,7 @@ const getBackground = (genreId) => {
 //me creo una variable:
 const ulrParam = new URLSearchParams(window.location.search);
 //ahora me cojo el id:
-const id = ulrParam.get("id");
+const idCard = ulrParam.get("id"); //la variable se llama idCard que es la que se interpola.
 
 fetch(`https://dev.adalab.es/api/info/${idCard}`)
     .then((response) => response.json())
@@ -61,4 +61,3 @@ fetch(`https://dev.adalab.es/api/info/${idCard}`)
         userPhotoCard.src = targetData.photo;
         localStorage.setItem("targetData", JSON.stringify(targetData));
     });
-*/
