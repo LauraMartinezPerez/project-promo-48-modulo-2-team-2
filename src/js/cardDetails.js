@@ -16,6 +16,14 @@ const movieTwoCard = document.querySelector(".js-peli2");
 const movieThreeCard = document.querySelector(".js-peli3");
 const userPhotoCard = document.querySelector(".js-user-photo");
 
+//Para coger la info de la url de una pagina:
+
+//me creo una variable:
+const ulrParam = new URLSearchParams(window.location.search);
+//ahora me cojo el id:
+const id = ulrParam.get("id");
+console.log("ID obtenido:", id);
+
 //Para pintar el genero correctamente en la card.
 const getGenre = (genreId) => {
     switch (genreId) {
@@ -39,16 +47,10 @@ const getBackground = (genreId) => {
     }
 };
 
-//Para coger la info de la url de una pagina:
-
-//me creo una variable:
-const ulrParam = new URLSearchParams(window.location.search);
-//ahora me cojo el id:
-const id = ulrParam.get("id");
 
 fetch(`https://dev.adalab.es/api/info/${id}`)
-    .then((response) => response.json())
-    .then((data) => {
+    .then(response => response.json())
+    .then(data => {
         console.log(data);
         const targetData = data.data;
         titleCard.innerHTML = targetData.field3;
@@ -59,5 +61,7 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
         movieTwoCard.innerHTML = targetData.field5;
         movieThreeCard.innerHTML = targetData.field6;
         userPhotoCard.src = targetData.photo;
-        localStorage.setItem("targetData", JSON.stringify(targetData));
-    });
+    })
+
+    localStorage.setItem(targetData, "targetData")
+
