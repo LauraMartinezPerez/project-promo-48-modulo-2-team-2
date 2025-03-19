@@ -44,7 +44,6 @@ const getBackground = (genreId) => {
 fetch(`https://dev.adalab.es/api/info/${id}`)
     .then(response => response.json())
     .then(data => {
-        console.log(data);
         const targetData = data.data;
         titleCard.innerHTML = targetData.field3;
         nameCard.innerHTML = targetData.field2;
