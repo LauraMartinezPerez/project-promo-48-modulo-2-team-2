@@ -21,6 +21,7 @@ const ulrParam = new URLSearchParams(window.location.search);
 const id = ulrParam.get("id");
 console.log("ID obtenido:", id);
 //Para pintar el genero correctamente en la card.
+
 const getGenre = (genreId) => {
     switch (genreId) {
         case 1:
@@ -44,6 +45,7 @@ const getBackground = (genreId) => {
 fetch(`https://dev.adalab.es/api/info/${id}`)
     .then(response => response.json())
     .then(data => {
+        console.log(data);
         const targetData = data.data;
         titleCard.innerHTML = targetData.field3;
         nameCard.innerHTML = targetData.field2;
@@ -55,4 +57,3 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
         userPhotoCard.src = targetData.photo;
         localStorage.setItem("targetData", JSON.stringify(targetData));
     })
-    .catch(error => console.error("Error en la petición:", error));
