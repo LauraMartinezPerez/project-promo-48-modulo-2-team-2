@@ -18,7 +18,9 @@ const userPhotoCard = document.querySelector(".js-user-photo");
 
 //Para pintar el genero correctamente en la card.
 const getGenre = (genreId) => {
-    switch (genreId) {
+    switch (
+        genreId //es como hacer un if/else if/else if...
+    ) {
         case 1:
             return "Terror";
         case 2:
