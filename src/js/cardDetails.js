@@ -46,6 +46,7 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
     .then(data => {
         console.log(data);
         const targetData = data.data;
+        localStorage.setItem("targetData", JSON.stringify(targetData));
         titleCard.innerHTML = targetData.field3;
         nameCard.innerHTML = targetData.field2;
         genreCard.innerHTML = getGenre(targetData.field1);
@@ -54,5 +55,5 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
         movieTwoCard.innerHTML = targetData.field5;
         movieThreeCard.innerHTML = targetData.field6;
         userPhotoCard.src = targetData.photo;
-        localStorage.setItem("targetData", JSON.stringify(targetData));
+        
     })
