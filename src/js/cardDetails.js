@@ -19,7 +19,6 @@ const userPhotoCard = document.querySelector(".js-user-photo");
 const ulrParam = new URLSearchParams(window.location.search);
 //ahora me cojo el id:
 const id = ulrParam.get("id");
-console.log("ID obtenido:", id);
 //Para pintar el genero correctamente en la card.
 
 const getGenre = (genreId) => {
